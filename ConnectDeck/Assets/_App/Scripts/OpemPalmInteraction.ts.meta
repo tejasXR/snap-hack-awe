@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/616557ed-dc9b-438c-bc67-42477b6b4f4c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> e62190d1-e602-40e0-9274-c4cfdba971ec
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> e62190d1-e602-40e0-9274-c4cfdba971ec
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> af7dc537-be6a-4cf1-b529-79c2508d8c8a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/af7dc537-be6a-4cf1-b529-79c2508d8c8a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: d7168442-0172-4442-94fe-8010b7b079c9
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cardUi: false
+    cardUiOffset: false
+    leftHand: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cardUiOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      cardUi: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject leftHand
+    - // @input vec3 cardUiOffset
+    - // @input SceneObject cardUi
