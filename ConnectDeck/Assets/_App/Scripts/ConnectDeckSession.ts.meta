@@ -1,0 +1,54 @@
+- !<AssetImportMetadata/7436b482-f02e-40fa-9f0d-ae4123df93f1>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 01bfc929-f564-4590-83e3-1e7a6f96de1b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 01bfc929-f564-4590-83e3-1e7a6f96de1b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 087f7773-bea2-461a-aacf-0c567375d9c0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/087f7773-bea2-461a-aacf-0c567375d9c0>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 87712988-aa79-4e79-bbc9-a07214454109
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    connectOnStart: false
+    enableOnConnected: false
+    instantiator: false
+    instantiatorParent: false
+    wayfinderObject: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - connectOnStart: false
+      enableOnConnected: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      instantiator: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      instantiatorParent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      wayfinderObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input bool connectOnStart
+    - // @input SceneObject enableOnConnected
+    - // @input AssignableType instantiator
+    - // @input SceneObject instantiatorParent
+    - // @input SceneObject wayfinderObject
