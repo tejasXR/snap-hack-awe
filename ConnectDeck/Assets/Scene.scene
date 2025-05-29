@@ -6,6 +6,8 @@
     - !<own> 278949d5-860a-4435-a6fa-a23f214d7768
     - !<own> 32410a62-afed-451e-bc9c-7c1e4cc4745b
     - !<own> bb6d7cde-6ae1-45eb-8101-32232b264eb5
+    - !<own> 6f7d82f0-6939-4496-9a0f-8c31f9fd0e6b
+    - !<own> f1920bf5-bdd9-4399-9f39-e73a038096f4
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -5351,6 +5353,24 @@
     - !<own> 6a1b1ce3-1024-41da-a5da-57e54af22688
   Components:
     - !<own> ed51ab9a-da1e-45bf-8ce2-5296738fb6ba
+- !<ScriptComponent/4d5d438a-caac-4612-bd86-c9c02722de15>
+  PrefabRemaps:
+    []
+  Name: OpemPalmInteraction
+  Enabled: true
+  ScriptAsset: !<reference> e62190d1-e602-40e0-9274-c4cfdba971ec
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      leftHand: !<reference.SceneObject> 8ecdc064-9efe-4dae-87fc-1b12a3be1f15
+      cardUiOffset: !<Vec3> {x: 0.000000, y: -11.000000, z: 0.000000}
+      cardUi: !<reference.SceneObject> f1920bf5-bdd9-4399-9f39-e73a038096f4
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/4def3028-c90b-4de8-8a7c-0645962e66a9>
   PrefabRemaps:
     []
@@ -6276,6 +6296,21 @@
     - !<own> ddffcf44-3f07-4d03-88d6-e5b78910e6e2
   Components:
     - !<own> 9163e520-bcff-48bf-aae5-663b3d413454
+- !<SceneObject/5b92db6e-0d2b-43f9-89c0-cd4ecac61ccb>
+  PrefabRemaps:
+    []
+  Name: Wayfinder Container
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 7.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> dddd8515-7d68-4913-99b2-7df7f19f9ecd
+  Components:
+    []
 - !<Text/5ba3ace2-9abb-469c-883b-200461fe1814>
   PrefabRemaps:
     []
@@ -7875,6 +7910,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/6f7d82f0-6939-4496-9a0f-8c31f9fd0e6b>
+  PrefabRemaps:
+    []
+  Name: Open Palm Interaction
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4d5d438a-caac-4612-bd86-c9c02722de15
 - !<ScriptComponent/6fa00c21-1b7d-4e89-b933-75af714aaad6>
   PrefabRemaps:
     []
@@ -8426,6 +8476,26 @@
   Components:
     - !<own> 539b2552-9eb5-4862-ae9c-b6f892567598
     - !<own> be611d4c-d479-4bde-bca4-bddaa57ae579
+- !<RenderMeshVisual/7a45fa35-0ba1-48b2-be06-98b60920fd8c>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c71dde88-df6c-46a6-8426-d07b956a747e
+  Mesh: !<reference> 258b9074-fe96-4829-88fc-26b60c4d462c
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<ScriptComponent/7a6bdd99-cd14-40b4-a48a-fd36c5d2828c>
   PrefabRemaps:
     []
@@ -11602,6 +11672,25 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
+- !<Image/aa077ce8-669d-4304-b55f-15177178f179>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 05705031-c1b1-46ca-a653-00d878a286a4
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/aa624751-35e3-482f-9ae6-92a9c6faf3dd>
   PrefabRemaps:
     []
@@ -12758,8 +12847,8 @@
 - !<SceneObject/bb6d7cde-6ae1-45eb-8101-32232b264eb5>
   PrefabRemaps:
     []
-  Name: Connect Deck UI
-  Enabled: true
+  Name: Connect Deck UI - Hovered Deck Concept
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: -16.147873}
@@ -14092,6 +14181,22 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/c751a686-ca5d-4af7-9b6e-f451f0dcf636>
+  PrefabRemaps:
+    []
+  Name: Card Summary UI
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 8.000000, y: 8.000000, z: 8.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> aa077ce8-669d-4304-b55f-15177178f179
+    - !<own> e0cc36e6-0f93-4424-a963-d6018acd0d13
 - !<SceneObject/c76867e0-bed1-4122-aaab-4ba083ef310d>
   PrefabRemaps:
     []
@@ -15786,6 +15891,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/dddd8515-7d68-4913-99b2-7df7f19f9ecd>
+  PrefabRemaps:
+    []
+  Name: Wayfinder Arrow
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7a45fa35-0ba1-48b2-be06-98b60920fd8c
 - !<SceneObject/ddffcf44-3f07-4d03-88d6-e5b78910e6e2>
   PrefabRemaps:
     []
@@ -15953,6 +16073,30 @@
     - !<own> ba041484-d75e-4f18-a05b-d66e069b6a06
   Components:
     []
+- !<ScriptComponent/e0cc36e6-0f93-4424-a963-d6018acd0d13>
+  PrefabRemaps:
+    []
+  Name: Billboard
+  Enabled: true
+  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  ScriptInputsDefault:
+    _yAxisEnabled: true
+    _zAxisEnabled: true
+    _axisBufferDegrees: true
+    duration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _xAxisEnabled: true
+      _yAxisEnabled: true
+      _zAxisEnabled: false
+      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
+      duration: 0.033000
+  ScriptTypes:
+    "":
+      {}
 - !<ColliderComponent/e0e7b6b9-8e64-4977-86eb-3e21fee2e19e>
   PrefabRemaps:
     []
@@ -17046,6 +17190,22 @@
     - !<own> ca588122-c395-4c5e-9ebf-ca6b40016c84
     - !<own> 56c20911-9b07-4eea-8c05-8cf16308896c
     - !<own> 661707eb-1ce1-442e-9562-5cb2390745b0
+- !<SceneObject/f1920bf5-bdd9-4399-9f39-e73a038096f4>
+  PrefabRemaps:
+    []
+  Name: Card UI - Open Palm Concept
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c751a686-ca5d-4af7-9b6e-f451f0dcf636
+    - !<own> 5b92db6e-0d2b-43f9-89c0-cd4ecac61ccb
+  Components:
+    []
 - !<ColliderComponent/f1d4409e-f469-47bc-abe1-9ac7fcba4a03>
   PrefabRemaps:
     []
