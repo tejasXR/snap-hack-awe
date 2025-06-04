@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/74dc1bde-b12b-466f-ad30-ac12ba55f1a5>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> be2857f9-f06f-4262-a2af-dbabf229d38b
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> be2857f9-f06f-4262-a2af-dbabf229d38b
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b6f2bf87-81d0-4d94-9080-6f90962d2f55
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b6f2bf87-81d0-4d94-9080-6f90962d2f55>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 717d43bb-b20a-4216-b643-828c5a0dc534
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    boxModel: false
+    nextButton: false
+    prevButton: false
+    rotationTime: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - prevButton: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      nextButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      boxModel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rotationTime: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType prevButton
+    - // @input AssignableType_1 nextButton
+    - // @input SceneObject boxModel
+    - // @input float rotationTime
