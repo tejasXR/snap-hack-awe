@@ -29,6 +29,7 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     boxModel: false
+    boxOpenInteraction: false
     nextButton: false
     prevButton: false
     rotationTime: false
@@ -37,15 +38,17 @@
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - prevButton: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
-      nextButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+    - boxOpenInteraction: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      prevButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      nextButton: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
       boxModel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       rotationTime: !<float> 0.000000
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input AssignableType prevButton
-    - // @input AssignableType_1 nextButton
+    - // @input AssignableType boxOpenInteraction
+    - // @input AssignableType_1 prevButton
+    - // @input AssignableType_2 nextButton
     - // @input SceneObject boxModel
     - // @input float rotationTime

@@ -1,11 +1,14 @@
 import {PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
 import { InteractorEvent } from "SpectaclesInteractionKit.lspkg/Core/Interactor/InteractorEvent";
-import Easing from "LSTween.lspkg/TweenJS/Easing";
+import { Easing } from "LSTween.lspkg/TweenJS/Easing";
 import { LSTween } from "LSTween.lspkg/LSTween";
+import { BoxOpenInteraction } from "_App/Scripts/BoxOpenInteraction";
 
 @component
-export class NewScript extends BaseScriptComponent {
+export class BoxController extends BaseScriptComponent {
     
+    @input boxOpenInteraction: BoxOpenInteraction;
+
     @input prevButton: PinchButton;
     @input nextButton: PinchButton;
     @input boxModel: SceneObject;
@@ -26,7 +29,13 @@ export class NewScript extends BaseScriptComponent {
     {
         this.createEvent('OnStartEvent').bind(() => {
             this.onStart();
-        })
+        });
+
+        this.boxOpenInteraction.onTriggeredCallback = () => {
+            this.boxOpen()
+        };
+
+        this.boxOpenInteraction.getSceneObject().enabled = false;
     }
 
     onStart() 
@@ -79,6 +88,7 @@ export class NewScript extends BaseScriptComponent {
         print("Step: " + stepIndex);
         this.prevButton.getSceneObject().enabled = stepIndex != 0;
         this.nextButton.getSceneObject().enabled = stepIndex != this.maxSteps - 1;
+        this.boxOpenInteraction.getSceneObject().enabled = stepIndex == this.maxSteps - 1;
     }
 
     private rotateBox(rotateRight:boolean) 
@@ -86,7 +96,7 @@ export class NewScript extends BaseScriptComponent {
         this.isRotating = true;
 
         var angleMagnitude = 90;
-        var rotationAddition = rotateRight ? angleMagnitude : -angleMagnitude;
+        var rotationAddition = rotateRight ? -angleMagnitude : angleMagnitude;
         
         // Convert degrees to radians
         var radians = rotationAddition * (Math.PI / 180);
@@ -117,6 +127,33 @@ export class NewScript extends BaseScriptComponent {
             // Set the object's world rotation to the new rotation
             this.boxModel.getTransform().setWorldRotation(newRotation);
             this.isRotating = false;
+        });
+    }
+
+    private boxOpen(){
+        print("Box Opened!")
+
+          // Get the object's current local scale
+        var currentScale = this.boxModel.getTransform().getLocalScale();
+
+         // Get the new rotation by rotating the old rotation by rotationToApply
+        var newScale = vec3.zero();
+
+        LSTween.scaleFromToLocal
+        (
+                this.boxModel.getTransform(),
+                currentScale,
+                newScale,
+                this.rotationTime
+        )
+        .easing(Easing.Cubic.InOut)
+        .start()
+        .onComplete(() =>
+        {
+            // Set the object's world rotation to the new rotation
+            this.boxModel.getTransform().setLocalScale(newScale);
+            this.prevButton.getSceneObject().enabled = false;
+            this.nextButton.getSceneObject().enabled = false;
         });
     }
 }
