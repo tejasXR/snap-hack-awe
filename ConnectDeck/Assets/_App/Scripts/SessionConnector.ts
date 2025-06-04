@@ -1,11 +1,14 @@
+import {PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
 import WorldCameraFinderProvider from "SpectaclesInteractionKit.lspkg/Providers/CameraProvider/WorldCameraFinderProvider"
 import {SessionController} from "SpectaclesSyncKit.lspkg/Core/SessionController"
 import {Instantiator} from "SpectaclesSyncKit.lspkg/Components/Instantiator"
 
 @component
-export class NewScript extends BaseScriptComponent {
+export class SessionConnector extends BaseScriptComponent {
     
-    @input connectOnStart: boolean;
+    @input private readonly multiPlayerButton: PinchButton
+
+    // @input connectOnStart: boolean;
     @input enableOnConnected: SceneObject;
     @input instantiator: Instantiator;
     @input instantiatorParent: SceneObject;
@@ -31,13 +34,17 @@ export class NewScript extends BaseScriptComponent {
             print("Session is connected!");
         });
 
-        if (this.connectOnStart)
-        {
-            this.startConnectedSession();
-        }
+        this.multiPlayerButton.onButtonPinched.add(() => this.startConnectedSession())
+
+        // if (this.connectOnStart)
+        // {
+        //     this.startConnectedSession();
+        // }
     }
 
-    private startConnectedSession(){
+    private startConnectedSession()
+    {
+        this.multiPlayerButton.getSceneObject().enabled = false;
         SessionController.getInstance().init();
     }
 
@@ -45,9 +52,8 @@ export class NewScript extends BaseScriptComponent {
         // Need to stop session
     }
 
-    private onUpdate(){
-
-        print(this.instantiatorParent.getChildrenCount());
+    private onUpdate()
+    {
 
         if (this.instantiatorParent.getChildrenCount() >= 1)
         {
