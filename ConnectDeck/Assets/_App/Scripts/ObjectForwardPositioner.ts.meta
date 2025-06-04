@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/19a5b7c8-7da3-4c66-b0b4-c32bafcf6284>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7e9b732e-adc0-435d-a639-ccd5ed56ec19
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7e9b732e-adc0-435d-a639-ccd5ed56ec19
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 8e4f836f-1461-4269-a017-137183f90541
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/8e4f836f-1461-4269-a017-137183f90541>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c2c5b209-897f-4fec-8560-2f78bfa87696
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    startDistanceFromUser: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - startDistanceFromUser: !<float> 150.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float startDistanceFromUser = "150.0"'
