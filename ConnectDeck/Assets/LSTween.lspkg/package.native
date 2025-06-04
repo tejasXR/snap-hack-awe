@@ -1,0 +1,34 @@
+- !<NativePackageDescriptor/337c1bdf-b128-4683-8727-d1de785c3362>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 9
+    patch: 1
+    build: 25051422
+    type: Unset
+  Description: 'To extend or edit the package, right-click on the asset and select "Unpack."'
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  InternalVersion: 4
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 1
+  UpdateCheckpoint: 57
+  ExportUid: 3b5eba1c-a4e8-4124-8c07-5f3222a5289a
+  ComponentUid: d0c06990-bb77-41d8-905a-5f74c66c942c
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: LSTween
+    AssetId: 01nh49tLS3W7scF2JNRBJe
+    Hash: 0edbd45038854cacf9e7c9f372cf28c6
+    Version:
+      major: 1
+      minor: 0
+      patch: 1
+      build: 0
+  coreVersion: 309
+  clientVersion: 13.380000
