@@ -3812,6 +3812,7 @@
   Children:
     - !<own> cb8503bd-855f-4b2a-a984-9784ccc94f1c
     - !<own> d4897aac-a838-4ed0-bb04-a2fa1e494847
+    - !<own> f182e09b-28fe-4d1f-9de4-b1cab5a61f91
   Components:
     - !<own> 23b66e30-3d36-47e1-9181-770f85580455
 - !<Canvas/157b9829-c483-41dc-96cd-45214a2fdc52>
@@ -5972,10 +5973,11 @@
     {}
   ScriptInputs:
     "":
-      prevButton: !<MappingBased.AssignableType> d740da64-3c0c-4ee6-a312-055f49c43de4
-      nextButton: !<MappingBased.AssignableType_1> fb3a8ce4-57a5-4439-8d34-4d545aee8e70
+      boxOpenInteraction: !<MappingBased.AssignableType> 2d9e10b7-13b6-4333-a2b3-7cc55bd5c3b8
+      prevButton: !<MappingBased.AssignableType_1> d740da64-3c0c-4ee6-a312-055f49c43de4
+      nextButton: !<MappingBased.AssignableType_2> fb3a8ce4-57a5-4439-8d34-4d545aee8e70
       boxModel: !<reference.SceneObject> cb8503bd-855f-4b2a-a984-9784ccc94f1c
-      rotationTime: !<float> 1250.000000
+      rotationTime: !<float> 850.000000
   ScriptTypes:
     "":
       {}
@@ -6300,7 +6302,6 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-    _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
@@ -6310,7 +6311,7 @@
     {}
   ScriptInputs:
     "":
-      _playAudioOnHover: false
+      _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
@@ -8017,6 +8018,24 @@
     - !<own> be1d7370-29cf-49e0-9cf4-9fd5aeab07b4
   Components:
     []
+- !<ScriptComponent/2d9e10b7-13b6-4333-a2b3-7cc55bd5c3b8>
+  PrefabRemaps:
+    []
+  Name: BoxOpenInteraction
+  Enabled: true
+  ScriptAsset: !<reference> 2a9b1cc1-7653-4b8a-8510-5eefef57e11e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      leftHand: !<reference.SceneObject> b0ee57a1-b7cc-4b6e-942d-abbb972273bc
+      rightHand: !<reference.SceneObject> 529386ff-d4c7-4134-b6af-17d06c2c7441
+      distanceTriggerThreshold: !<float> 35.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/2dbc1ad5-453d-4385-99ef-423f3e817aa7>
   PrefabRemaps:
     []
@@ -36476,7 +36495,6 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-    _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
@@ -36486,7 +36504,7 @@
     {}
   ScriptInputs:
     "":
-      _playAudioOnHover: false
+      _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
@@ -43387,6 +43405,21 @@
     - !<own> 3948112a-faf4-433c-87c7-2c0d12d42b7a
   Components:
     []
+- !<SceneObject/f182e09b-28fe-4d1f-9de4-b1cab5a61f91>
+  PrefabRemaps:
+    []
+  Name: Box Open Interaction
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2d9e10b7-13b6-4333-a2b3-7cc55bd5c3b8
 - !<RenderMeshVisual/f18dbd57-1820-4f29-b23d-9bf559d7ff30>
   PrefabRemaps:
     []
