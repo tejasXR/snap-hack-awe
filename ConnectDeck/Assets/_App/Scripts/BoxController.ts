@@ -1,4 +1,4 @@
-import {PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
+import { PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
 import { InteractorEvent } from "SpectaclesInteractionKit.lspkg/Core/Interactor/InteractorEvent";
 import { Easing } from "LSTween.lspkg/TweenJS/Easing";
 import { LSTween } from "LSTween.lspkg/LSTween";

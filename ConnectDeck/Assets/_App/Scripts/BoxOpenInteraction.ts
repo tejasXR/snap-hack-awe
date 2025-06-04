@@ -18,10 +18,10 @@ export class BoxOpenInteraction extends BaseScriptComponent {
 
     private onUpdate()
     {
-        // if (!this.getSceneObject().enabled)
-        // {
-        //     return;
-        // }
+        if (!this.getSceneObject().enabled)
+        {
+            return;
+        }
 
         if (this.isTriggered)
         {
