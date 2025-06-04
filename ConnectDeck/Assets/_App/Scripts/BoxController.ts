@@ -11,15 +11,22 @@ export class NewScript extends BaseScriptComponent {
     @input boxModel: SceneObject;
     @input rotationTime: number;
 
-    private destinationRotation: quat;
+    private stepIndex: number;
+    private maxSteps: number;
+    private isRotating: boolean;
+
+    constructor()
+    {
+        super();
+        this.stepIndex = 0;
+        this.maxSteps = 4;
+    }
     
     onAwake() 
     {
         this.createEvent('OnStartEvent').bind(() => {
             this.onStart();
         })
-
-        this.destinationRotation = this.boxModel.getTransform().getLocalRotation();
     }
 
     onStart() 
@@ -29,25 +36,54 @@ export class NewScript extends BaseScriptComponent {
 
         this.prevButton.onButtonPinched.add(prevButtonPressed)
         this.nextButton.onButtonPinched.add(nextButtonPressed)
+
+        this.prevButton.getSceneObject().enabled = false;
     }
 
     private previousSide()
     {
-       this.rotateBox(false);
+         if (this.isRotating)
+        {
+            return;
+        }
 
-        print("Previous");
+        this.stepIndex--;
+        if (this.stepIndex <= 0)
+        {
+            this.stepIndex = 0;
+        }
 
+        this.goToStep(this.stepIndex);
+        this.rotateBox(false);
     }
     
     private nextSide()
     {
+         if (this.isRotating)
+        {
+            return;
+        }
+
+        this.stepIndex++;
+        if (this.stepIndex > this.maxSteps - 1)
+        {
+            this.stepIndex = this.maxSteps - 1;
+        }
+
         this.rotateBox(true);
-        print("Next");
+        this.goToStep(this.stepIndex);
     }
 
-    private rotateBox(rotateRight:boolean) {
-        let currentRotation = this.boxModel.getTransform().getLocalRotation();
-        print("Current rotation: " + currentRotation.toEulerAngles());
+    private goToStep(stepIndex:number)
+    {
+        print("Step: " + stepIndex);
+        this.prevButton.getSceneObject().enabled = stepIndex != 0;
+        this.nextButton.getSceneObject().enabled = stepIndex != this.maxSteps - 1;
+    }
+
+    private rotateBox(rotateRight:boolean) 
+    {
+        this.isRotating = true;
 
         var angleMagnitude = 90;
         var rotationAddition = rotateRight ? angleMagnitude : -angleMagnitude;
@@ -59,25 +95,18 @@ export class NewScript extends BaseScriptComponent {
         var rotationToApply = quat.angleAxis(radians, vec3.up());
 
         // Get the object's current local rotation
-        var oldRotation = this.boxModel.getTransform().getLocalRotation();
+        var currentRotation = this.boxModel.getTransform().getLocalRotation();
 
         // Get the new rotation by rotating the old rotation by rotationToApply
-        var newRotation = rotationToApply.multiply(oldRotation);
+        var newRotation = rotationToApply.multiply(currentRotation);
 
         // Set the object's world rotation to the new rotation
         this.boxModel.getTransform().setWorldRotation(newRotation);
 
-        // var rotationAddition = rotateRight ? angleMagnitude : -angleMagnitude;
-
-        // this.destinationRotation = currentRotation;
-        // this.destinationRotation.y += rotationAddition;
-
-        // print("Trying to rotate to " + this.destinationRotation);
-
         LSTween.rotateFromToLocal
         (
                 this.boxModel.getTransform(),
-                oldRotation,
+                currentRotation,
                 newRotation,
                 this.rotationTime
         )
@@ -87,6 +116,7 @@ export class NewScript extends BaseScriptComponent {
         {
             // Set the object's world rotation to the new rotation
             this.boxModel.getTransform().setWorldRotation(newRotation);
+            this.isRotating = false;
         });
     }
 }
