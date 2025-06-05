@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/51beb272-4e5f-433e-ba64-d5c4fd9d99fe>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d3a4f320-c41b-4f7e-b3d4-8d62a33971da
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d3a4f320-c41b-4f7e-b3d4-8d62a33971da
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 203f9628-e327-48ba-a6a3-5cf15804e5fc
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/203f9628-e327-48ba-a6a3-5cf15804e5fc>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: a521c5b0-bc6e-43b4-ab23-51d515230e84
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    descriptionContainer: false
+    interaction: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - interaction: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      descriptionContainer: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType interaction
+    - // @input SceneObject descriptionContainer
