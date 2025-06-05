@@ -9,8 +9,9 @@ export class BoxOpenInteraction extends BaseScriptComponent {
     @input distanceTriggerThreshold: number;
     private isTriggered: boolean;
     
-    onAwake()
+    constructor()
     {
+        super();
         this.createEvent('UpdateEvent').bind(() => {
             this.onUpdate()
         });
