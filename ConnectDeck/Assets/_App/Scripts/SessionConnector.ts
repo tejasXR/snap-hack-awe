@@ -1,26 +1,26 @@
 import {PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
 import WorldCameraFinderProvider from "SpectaclesInteractionKit.lspkg/Providers/CameraProvider/WorldCameraFinderProvider"
 import {SessionController} from "SpectaclesSyncKit.lspkg/Core/SessionController"
-import {Instantiator} from "SpectaclesSyncKit.lspkg/Components/Instantiator"
+import { InstantiatorExample } from "../../SpectaclesSyncKit.lspkg/Examples/InstantiatorExample"
+import { Instantiator } from "SpectaclesSyncKit.lspkg/Components/Instantiator"
 
 @component
 export class SessionConnector extends BaseScriptComponent {
     
-    @input private readonly multiPlayerButton: PinchButton
+    @input private readonly sendConnectionButton: PinchButton
 
-    // @input connectOnStart: boolean;
+    @input connectOnStart: boolean;
     @input enableOnConnected: SceneObject;
-    @input instantiator: Instantiator;
-    @input instantiatorParent: SceneObject;
-    @input wayfinderObject: SceneObject;
-    
-    private instantiatedPosition: vec3;
-    
-    constructor(){
-        super()
+    @input instantiatorExample: InstantiatorExample;
+    // @input instantiatorParent: SceneObject;
+    // @input wayfinderObject: SceneObject;
+        
+    constructor()
+    {
+        super();
 
-        this.createEvent("OnStartEvent").bind(() => this.onStart())
-        this.createEvent("UpdateEvent").bind(() => this.onUpdate())
+        this.createEvent("OnStartEvent").bind(() => this.onStart());
+        this.createEvent("UpdateEvent").bind(() => this.onUpdate());
     }
     
  private onStart() {
@@ -29,23 +29,28 @@ export class SessionConnector extends BaseScriptComponent {
             print("WARNING: Connection Failed");
         })
 
-        SessionController.getInstance().onConnected.add(()=> {
+        SessionController.getInstance().onConnected.add(()=> 
+        {
             this.enableOnConnected.enabled = true;
+            this.instantiatorExample.getSceneObject().enabled = true;;
             print("Session is connected!");
         });
 
-        this.multiPlayerButton.onButtonPinched.add(() => this.startConnectedSession())
+        this.sendConnectionButton.onButtonPinched.add(() => this.startConnectedSession())
 
-        // if (this.connectOnStart)
-        // {
-        //     this.startConnectedSession();
-        // }
+        if (this.connectOnStart)
+        {
+            this.startConnectedSession();
+        }
     }
 
     private startConnectedSession()
     {
-        this.multiPlayerButton.getSceneObject().enabled = false;
+        // this.sendConnectionButton.getSceneObject().enabled = false;
         SessionController.getInstance().init();
+
+        // SessionController.getInstance().setColocatedBuildStatus(ColocatedBuildStatus.None);
+        // SessionController.getInstance().setColocatedMapId("");
     }
 
     private stopConnectedSession(){
@@ -54,25 +59,24 @@ export class SessionConnector extends BaseScriptComponent {
 
     private onUpdate()
     {
+        // if (this.instantiatorParent.getChildrenCount() >= 1)
+        // {
+        //     var childObjectTransform = this.instantiatorParent.children[0].getTransform();
+        //     var targtPos = childObjectTransform.getWorldPosition();
+        //     var originPos = this.wayfinderObject.getTransform().getWorldPosition();
 
-        if (this.instantiatorParent.getChildrenCount() >= 1)
-        {
-            var childObjectTransform = this.instantiatorParent.children[0].getTransform();
-            var targtPos = childObjectTransform.getWorldPosition();
-            var originPos = this.wayfinderObject.getTransform().getWorldPosition();
+        //     var angleToMove = originPos.angleTo(targtPos)
+        //     var directionVec = originPos.rotateTowards(targtPos, angleToMove);
 
-            var angleToMove = originPos.angleTo(targtPos)
-            var directionVec = originPos.rotateTowards(targtPos, angleToMove);
+        //     // var wayfinderDirection = this.wayfinderObject
+        //             // .getTransform()
+        //             // .getWorldPosition()
+        //             // .rotateTowards(this.instantiatedPosition, 3.14);
 
-            // var wayfinderDirection = this.wayfinderObject
-                    // .getTransform()
-                    // .getWorldPosition()
-                    // .rotateTowards(this.instantiatedPosition, 3.14);
+        //     // var angleToMove = this.instantiatedPosition.normalize - this.wayfinderObject.getTransform().getWorldPosition().normalize;
 
-            // var angleToMove = this.instantiatedPosition.normalize - this.wayfinderObject.getTransform().getWorldPosition().normalize;
-
-            print(directionVec);
-            this.wayfinderObject.getTransform().setWorldRotation(quat.fromEulerVec(directionVec));
-        }
+        //     print(directionVec);
+        //     this.wayfinderObject.getTransform().setWorldRotation(quat.fromEulerVec(directionVec));
+        // }
     }
 }

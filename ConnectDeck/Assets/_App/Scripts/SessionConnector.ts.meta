@@ -28,27 +28,24 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    connectOnStart: false
     enableOnConnected: false
-    instantiator: false
-    instantiatorParent: false
-    multiPlayerButton: false
-    wayfinderObject: false
+    instantiatorExample: false
+    sendConnectionButton: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - multiPlayerButton: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+    - sendConnectionButton: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      connectOnStart: false
       enableOnConnected: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      instantiator: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
-      instantiatorParent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      wayfinderObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      instantiatorExample: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input AssignableType multiPlayerButton
+    - // @input AssignableType sendConnectionButton
+    - // @input bool connectOnStart
     - // @input SceneObject enableOnConnected
-    - // @input AssignableType_1 instantiator
-    - // @input SceneObject instantiatorParent
-    - // @input SceneObject wayfinderObject
+    - // @input AssignableType_1 instantiatorExample
