@@ -1,0 +1,49 @@
+- !<AssetImportMetadata/569b224c-fbe3-4749-99c4-3f773a04ee02>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> d1a3e3b5-5111-4b11-bc63-9c0a464f2aff
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> d1a3e3b5-5111-4b11-bc63-9c0a464f2aff
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 519b548c-49a3-4061-b480-953501eed72d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/519b548c-49a3-4061-b480-953501eed72d>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 73467df0-0aa9-442c-a0f4-4b44f7ab4037
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    boxController: false
+    cardDatas: false
+    cardToConfigure: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - boxController: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      cardDatas: !<MappingBased.AssignableType_1[]>
+        []
+      cardToConfigure: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType boxController
+    - "// @input AssignableType_1[] cardDatas"
+    - // @input AssignableType_2 cardToConfigure
