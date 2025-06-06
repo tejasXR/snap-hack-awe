@@ -7,6 +7,8 @@ import { BoxOpenInteraction } from "_App/Scripts/BoxOpenInteraction";
 @component
 export class BoxController extends BaseScriptComponent {
     
+    public onBoxOpenedCallback?: () => void;
+
     @input boxOpenInteraction: BoxOpenInteraction;
 
     @input prevButton: PinchButton;
@@ -21,21 +23,22 @@ export class BoxController extends BaseScriptComponent {
     constructor()
     {
         super();
+
+          this.createEvent('OnStartEvent').bind(() => {
+            this.onStart();
+        });
+
         this.stepIndex = 0;
         this.maxSteps = 4;
     }
     
     onAwake() 
     {
-        this.createEvent('OnStartEvent').bind(() => {
-            this.onStart();
-        });
-
         this.boxOpenInteraction.onTriggeredCallback = () => {
-            this.boxOpen()
+            this.boxOpen();
         };
 
-        this.boxOpenInteraction.getSceneObject().enabled = false;
+        this.boxOpenInteraction.enabled = false;
     }
 
     onStart() 
@@ -88,7 +91,7 @@ export class BoxController extends BaseScriptComponent {
         print("Step: " + stepIndex);
         this.prevButton.getSceneObject().enabled = stepIndex != 0;
         this.nextButton.getSceneObject().enabled = stepIndex != this.maxSteps - 1;
-        this.boxOpenInteraction.getSceneObject().enabled = stepIndex == this.maxSteps - 1;
+        this.boxOpenInteraction.enabled = stepIndex == this.maxSteps - 1;
     }
 
     private rotateBox(rotateRight:boolean) 
@@ -155,5 +158,10 @@ export class BoxController extends BaseScriptComponent {
             this.prevButton.getSceneObject().enabled = false;
             this.nextButton.getSceneObject().enabled = false;
         });
+
+        if (this.onBoxOpenedCallback)
+        {
+            this.onBoxOpenedCallback();
+        }
     }
 }

@@ -19,7 +19,7 @@ export class BoxOpenInteraction extends BaseScriptComponent {
 
     private onUpdate()
     {
-        if (!this.getSceneObject().enabled)
+        if (!this.enabled)
         {
             return;
         }
@@ -35,8 +35,6 @@ export class BoxOpenInteraction extends BaseScriptComponent {
 
         var distanceToLeftHand = leftHandPosition.distance(boxPosition);
         var distanceToRightHand = rightHandPosition.distance(boxPosition);
-
-        print("Distance to left: " + distanceToLeftHand);
         
         if (distanceToLeftHand <= this.distanceTriggerThreshold 
             || distanceToRightHand <= this.distanceTriggerThreshold)
