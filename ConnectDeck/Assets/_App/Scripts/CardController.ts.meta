@@ -1,0 +1,57 @@
+- !<AssetImportMetadata/343ee393-c22f-4e97-95a1-44c8f7d5b83a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c5babe6b-7489-4ac5-b00a-46697d646898
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c5babe6b-7489-4ac5-b00a-46697d646898
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 1d9d893f-6732-404d-8025-ab4e7bd3829a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/1d9d893f-6732-404d-8025-ab4e7bd3829a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c612f594-ffae-4296-98c4-bc1bd5ecf226
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    animateTweenTime: false
+    billboard: false
+    cardFace: false
+    cardName: false
+    details: false
+    iceBreaker: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - cardName: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      cardFace: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      details: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      iceBreaker: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      animateTweenTime: !<float> 1000.000000
+      billboard: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Image cardName
+    - // @input Component.Image cardFace
+    - // @input Component.Text details
+    - // @input Component.Text iceBreaker
+    - '// @input float animateTweenTime = "1000"'
+    - // @input AssignableType billboard
