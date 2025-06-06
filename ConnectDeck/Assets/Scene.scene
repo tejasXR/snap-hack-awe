@@ -7,6 +7,7 @@
     - !<own> 32410a62-afed-451e-bc9c-7c1e4cc4745b
     - !<own> 6ba1841a-4826-44d9-a44a-a843394ae9b5
     - !<own> 9f2439a8-6371-4346-8e43-1de042c27f27
+    - !<own> 492ce8f3-1081-4a8e-9be1-7ab65beb2227
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -466,6 +467,24 @@
     []
   Components:
     - !<own> 6539f085-929f-474d-964a-1991bbd687f5
+- !<ScriptComponent/025b4e06-29df-46d8-93f0-c4f2dd1fbcdb>
+  PrefabRemaps:
+    []
+  Name: BoxOpenInteraction
+  Enabled: true
+  ScriptAsset: !<reference> 2a9b1cc1-7653-4b8a-8510-5eefef57e11e
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      leftHand: !<reference.SceneObject> b0ee57a1-b7cc-4b6e-942d-abbb972273bc
+      rightHand: !<reference.SceneObject> 529386ff-d4c7-4134-b6af-17d06c2c7441
+      distanceTriggerThreshold: !<float> 35.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/026a637f-04fb-4f8d-a7e5-1dd9bd29c259>
   PrefabRemaps:
     []
@@ -3068,6 +3087,25 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/10b179f4-c11b-4ae3-85de-35e9da49e63a>
+  PrefabRemaps:
+    []
+  Name: CardData
+  Enabled: true
+  ScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Material> 034d6b2f-a80a-4c3b-a396-de3b28e85b34
+      cardFace: !<reference.Material> d4f11489-5789-486d-b2e5-832c27cf33e3
+      details: Test
+      iceBreaker: Test
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/10b570ef-eeef-43fc-a613-114693c057c4>
   PrefabRemaps:
     []
@@ -3870,7 +3908,7 @@
   PrefabRemaps:
     []
   Name: Box UI
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -3880,10 +3918,10 @@
   Children:
     - !<own> cb8503bd-855f-4b2a-a984-9784ccc94f1c
     - !<own> d4897aac-a838-4ed0-bb04-a2fa1e494847
-    - !<own> f182e09b-28fe-4d1f-9de4-b1cab5a61f91
   Components:
     - !<own> 23b66e30-3d36-47e1-9181-770f85580455
     - !<own> 76a21cbf-4d2b-45ef-9734-87e185ae9dc3
+    - !<own> 025b4e06-29df-46d8-93f0-c4f2dd1fbcdb
 - !<Canvas/157b9829-c483-41dc-96cd-45214a2fdc52>
   PrefabRemaps:
     []
@@ -5842,7 +5880,7 @@
     {}
   ScriptInputs:
     "":
-      additiveVectorPosition: !<Vec3> {x: 0.000000, y: -4.000000, z: 50.000000}
+      additiveVectorPosition: !<Vec3> {x: 0.000000, y: -4.000000, z: 75.000000}
   ScriptTypes:
     "":
       {}
@@ -6236,7 +6274,7 @@
     {}
   ScriptInputs:
     "":
-      boxOpenInteraction: !<MappingBased.AssignableType> 2d9e10b7-13b6-4333-a2b3-7cc55bd5c3b8
+      boxOpenInteraction: !<MappingBased.AssignableType> 025b4e06-29df-46d8-93f0-c4f2dd1fbcdb
       prevButton: !<MappingBased.AssignableType_1> d740da64-3c0c-4ee6-a312-055f49c43de4
       nextButton: !<MappingBased.AssignableType_2> fb3a8ce4-57a5-4439-8d34-4d545aee8e70
       boxModel: !<reference.SceneObject> cb8503bd-855f-4b2a-a984-9784ccc94f1c
@@ -8413,24 +8451,6 @@
     - !<own> be1d7370-29cf-49e0-9cf4-9fd5aeab07b4
   Components:
     []
-- !<ScriptComponent/2d9e10b7-13b6-4333-a2b3-7cc55bd5c3b8>
-  PrefabRemaps:
-    []
-  Name: BoxOpenInteraction
-  Enabled: true
-  ScriptAsset: !<reference> 2a9b1cc1-7653-4b8a-8510-5eefef57e11e
-  ScriptInputsDefault:
-    {}
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      leftHand: !<reference.SceneObject> b0ee57a1-b7cc-4b6e-942d-abbb972273bc
-      rightHand: !<reference.SceneObject> 529386ff-d4c7-4134-b6af-17d06c2c7441
-      distanceTriggerThreshold: !<float> 35.000000
-  ScriptTypes:
-    "":
-      {}
 - !<SceneObject/2dbc1ad5-453d-4385-99ef-423f3e817aa7>
   PrefabRemaps:
     []
@@ -9484,6 +9504,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/32ed94f0-fdd5-4e7d-9b27-e4cf7d78a303>
+  PrefabRemaps:
+    []
+  Name: Hagar Data
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7bca69ef-c02e-473f-a8b2-3ffce7dee45c
 - !<SceneObject/33374b0b-f8bb-49d8-b6bf-1fbaab9cd322>
   PrefabRemaps:
     []
@@ -9829,6 +9864,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/34cd9faa-9e58-45ca-8c64-078f598efcf8>
+  PrefabRemaps:
+    []
+  Name: Evan Data
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4d85402f-d15f-4043-b31b-58ce341808c1
 - !<ScriptComponent/353bec8b-3c03-484e-9af7-ae8abe35a1a2>
   PrefabRemaps:
     []
@@ -12310,6 +12360,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/42055961-4461-4ae4-8ecf-614ef1569724>
+  PrefabRemaps:
+    []
+  Name: Tejas Data
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 10b179f4-c11b-4ae3-85de-35e9da49e63a
 - !<SceneObject/423f1b7d-4183-46ad-85ad-b0dd34e23ac3>
   PrefabRemaps:
     []
@@ -13643,6 +13708,26 @@
     - !<own> d81105ce-3fb0-4b07-9041-e467cafc4bf4
   Components:
     []
+- !<SceneObject/492ce8f3-1081-4a8e-9be1-7ab65beb2227>
+  PrefabRemaps:
+    []
+  Name: Card Configuration
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 42055961-4461-4ae4-8ecf-614ef1569724
+    - !<own> 32ed94f0-fdd5-4e7d-9b27-e4cf7d78a303
+    - !<own> b206792a-00d0-4f58-8c90-b12b0bf6593f
+    - !<own> f726d30e-5e7b-41eb-b79c-e2e3276ba285
+    - !<own> 34cd9faa-9e58-45ca-8c64-078f598efcf8
+    - !<own> 9778ab46-7587-4892-b1fc-6831fa1d1355
+  Components:
+    - !<own> e141d72f-6595-44a8-8615-2a2abde477cf
 - !<ScriptComponent/4945f7d9-c77f-4418-bc84-3518e775d95f>
   PrefabRemaps:
     []
@@ -14397,6 +14482,25 @@
       leftHand: !<reference.SceneObject> 8ecdc064-9efe-4dae-87fc-1b12a3be1f15
       cardUiOffset: !<Vec3> {x: 0.000000, y: -11.000000, z: 0.000000}
       cardUi: !<reference.SceneObject> f1920bf5-bdd9-4399-9f39-e73a038096f4
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/4d85402f-d15f-4043-b31b-58ce341808c1>
+  PrefabRemaps:
+    []
+  Name: CardData
+  Enabled: true
+  ScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Material> 034d6b2f-a80a-4c3b-a396-de3b28e85b34
+      cardFace: !<reference.Material> d4f11489-5789-486d-b2e5-832c27cf33e3
+      details: Test
+      iceBreaker: Test
   ScriptTypes:
     "":
       {}
@@ -19963,6 +20067,7 @@
   Children:
     - !<own> 7d145c1a-a57f-4f5b-b140-c38875657867
   Components:
+    - !<own> df1b6092-0b92-4113-8245-66ac23355c4c
     - !<own> 20fe92f2-63e1-4206-bf0a-41c7f8f1948c
 - !<RenderMeshVisual/6bee69ae-e839-450f-8a24-fe0685dba5d2>
   PrefabRemaps:
@@ -21713,12 +21818,12 @@
   Enabled: true
   ScriptAsset: !<reference> 7e9b732e-adc0-435d-a639-ccd5ed56ec19
   ScriptInputsDefault:
-    additiveVectorPosition: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      additiveVectorPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      additiveVectorPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 75.000000}
   ScriptTypes:
     "":
       {}
@@ -22738,6 +22843,25 @@
     []
   Components:
     - !<own> 080951e8-d600-4a6e-8030-e136b74d8873
+- !<ScriptComponent/7bca69ef-c02e-473f-a8b2-3ffce7dee45c>
+  PrefabRemaps:
+    []
+  Name: CardData
+  Enabled: true
+  ScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Material> af9c3d60-326e-478a-8560-13cd48016a52
+      cardFace: !<reference.Material> 9c9be541-417b-40ac-b669-5fa0ee957f46
+      details: Test
+      iceBreaker: Test
+  ScriptTypes:
+    "":
+      {}
 - !<ScreenTransform/7bdc337c-002e-4397-9ed3-7f5325f60c11>
   PrefabRemaps:
     []
@@ -26699,6 +26823,25 @@
     bottom: -20.000000
     right: 15.000000
     top: 20.000000
+- !<ScriptComponent/9174e6b5-bd13-4a55-8d2b-3ad726797ff9>
+  PrefabRemaps:
+    []
+  Name: CardData
+  Enabled: true
+  ScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Material> 383d8a4b-8107-49be-9441-393c9ceb2dac
+      cardFace: !<reference.Material> ab3fe676-f0e7-4257-ac44-5731d4123eb4
+      details: Test
+      iceBreaker: Test
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/91859e26-b2f9-4936-9e49-8941dbc7d97c>
   PrefabRemaps:
     []
@@ -27688,6 +27831,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9778ab46-7587-4892-b1fc-6831fa1d1355>
+  PrefabRemaps:
+    []
+  Name: Meghna Data
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c9eeb574-dca2-4d41-aff4-e7b2b7513a3a
 - !<RenderMeshVisual/97900200-e8a7-4e6a-9254-3a301033599f>
   PrefabRemaps:
     []
@@ -28523,7 +28681,7 @@
       _yAxisEnabled: true
       _zAxisEnabled: false
       _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
+      _axisEasing: !<Vec3> {x: 0.100000, y: 0.100000, z: 0.100000}
       duration: 0.033000
   ScriptTypes:
     "":
@@ -30197,7 +30355,7 @@
 - !<SceneObject/a4042ac0-ee9b-4a74-b074-4e00892d0835>
   PrefabRemaps:
     []
-  Name: Detail Description
+  Name: Ice Breaker Description
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -32640,6 +32798,21 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/b206792a-00d0-4f58-8c90-b12b0bf6593f>
+  PrefabRemaps:
+    []
+  Name: Jesse Data
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> feebc4fd-17c8-4efd-9175-155129689d39
 - !<Text/b219ce0c-a052-4548-b65f-df00ac03d5ef>
   PrefabRemaps:
     []
@@ -37340,6 +37513,25 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/c9eeb574-dca2-4d41-aff4-e7b2b7513a3a>
+  PrefabRemaps:
+    []
+  Name: CardData
+  Enabled: true
+  ScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Material> 034d6b2f-a80a-4c3b-a396-de3b28e85b34
+      cardFace: !<reference.Material> d4f11489-5789-486d-b2e5-832c27cf33e3
+      details: Test
+      iceBreaker: Test
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/ca588122-c395-4c5e-9ebf-ca6b40016c84>
   PrefabRemaps:
     []
@@ -41730,6 +41922,27 @@
     []
   Components:
     - !<own> e3dabe71-2cbc-47b5-b2e9-93d8ff3902c6
+- !<ScriptComponent/df1b6092-0b92-4113-8245-66ac23355c4c>
+  PrefabRemaps:
+    []
+  Name: CardController
+  Enabled: true
+  ScriptAsset: !<reference> c5babe6b-7489-4ac5-b00a-46697d646898
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Image> 8b313f7a-852a-43bd-996c-4c0a54f2f085
+      cardFace: !<reference.Image> a7c2c7eb-6281-470f-9993-a8a67b23c5c2
+      details: !<reference.Text> 8ae55798-41b3-48be-9543-350fa441dd9d
+      iceBreaker: !<reference.Text> fdfb53f7-6597-4831-b869-c032d630f122
+      animateTweenTime: !<float> 2500.000000
+      billboard: !<MappingBased.AssignableType> 9c7148c6-f583-48ba-ad40-2f21855ad6f4
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/df49a6dc-2671-478e-90d8-fca1d274bc75>
   PrefabRemaps:
     []
@@ -42024,6 +42237,28 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
+- !<ScriptComponent/e141d72f-6595-44a8-8615-2a2abde477cf>
+  PrefabRemaps:
+    []
+  Name: CardConfiguration
+  Enabled: true
+  ScriptAsset: !<reference> d1a3e3b5-5111-4b11-bc63-9c0a464f2aff
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      boxController: !<MappingBased.AssignableType> 23b66e30-3d36-47e1-9181-770f85580455
+      cardDatas: !<MappingBased.AssignableType_1[]>
+        - !<reference> 10b179f4-c11b-4ae3-85de-35e9da49e63a
+        - !<reference> 7bca69ef-c02e-473f-a8b2-3ffce7dee45c
+        - !<reference> feebc4fd-17c8-4efd-9175-155129689d39
+        - !<reference> 9174e6b5-bd13-4a55-8d2b-3ad726797ff9
+      cardToConfigure: !<MappingBased.AssignableType_2> df1b6092-0b92-4113-8245-66ac23355c4c
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/e195d7ce-2a2e-4ce8-9f05-aa7f32d3064a>
   PrefabRemaps:
     []
@@ -44983,21 +45218,6 @@
     - !<own> 3948112a-faf4-433c-87c7-2c0d12d42b7a
   Components:
     []
-- !<SceneObject/f182e09b-28fe-4d1f-9de4-b1cab5a61f91>
-  PrefabRemaps:
-    []
-  Name: Box Open Interaction
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 2d9e10b7-13b6-4333-a2b3-7cc55bd5c3b8
 - !<RenderMeshVisual/f18dbd57-1820-4f29-b23d-9bf559d7ff30>
   PrefabRemaps:
     []
@@ -45935,6 +46155,21 @@
     - !<own> 1b5069b8-b645-4267-8a5f-6f71a0f6a87f
   Components:
     []
+- !<SceneObject/f726d30e-5e7b-41eb-b79c-e2e3276ba285>
+  PrefabRemaps:
+    []
+  Name: Izzy Data
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9174e6b5-bd13-4a55-8d2b-3ad726797ff9
 - !<SceneObject/f73cfe24-766d-4158-8354-f9cefe3a38cf>
   PrefabRemaps:
     []
@@ -47446,6 +47681,25 @@
     - !<own> 4b0d34de-d371-4684-9ed0-ee99494c5c09
   Components:
     []
+- !<ScriptComponent/feebc4fd-17c8-4efd-9175-155129689d39>
+  PrefabRemaps:
+    []
+  Name: CardData
+  Enabled: true
+  ScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      cardName: !<reference.Material> aeac724c-b564-442f-b99d-d701c9b9deea
+      cardFace: !<reference.Material> b34be8e1-688b-4820-8e2c-7a38bd41df15
+      details: Test
+      iceBreaker: Test
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/ff15ce3c-5042-45c8-a5c5-074cd8467028>
   PrefabRemaps:
     []
