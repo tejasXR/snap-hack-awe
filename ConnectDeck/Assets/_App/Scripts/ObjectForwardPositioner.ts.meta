@@ -28,15 +28,15 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    startDistanceFromUser: false
+    additiveVectorPosition: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - startDistanceFromUser: !<float> 150.000000
+    - additiveVectorPosition: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
   ScriptTypes:
     -
       {}
   InputLines:
-    - '// @input float startDistanceFromUser = "150.0"'
+    - // @input vec3 additiveVectorPosition

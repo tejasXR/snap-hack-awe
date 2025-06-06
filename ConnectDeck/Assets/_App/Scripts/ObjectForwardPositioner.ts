@@ -3,7 +3,7 @@ import WorldCameraFinderProvider from "SpectaclesInteractionKit.lspkg/Providers/
 @component
 export class ObjectForwardPositioner extends BaseScriptComponent {
     
-    @input("float", "150.0")  private readonly startDistanceFromUser: number
+    @input private readonly additiveVectorPosition: vec3;
     
     private worldCamera: WorldCameraFinderProvider
 
@@ -22,12 +22,21 @@ export class ObjectForwardPositioner extends BaseScriptComponent {
     private positionInFrontOfUser() 
     {
         const head = this.worldCamera.getTransform().getWorldPosition();
+        
         const forward = this.worldCamera.getTransform().forward;
-        const pos = forward.normalize().uniformScale(-this.startDistanceFromUser);
+        const right = this.worldCamera.getTransform().right;
+        const up = this.worldCamera.getTransform().up;
+
+
+        const normalizedX = right.normalize().uniformScale(-this.additiveVectorPosition.x).x;
+        const normalizedY = up.normalize().uniformScale(this.additiveVectorPosition.y).y;
+        const normalizedZ = forward.normalize().uniformScale(-this.additiveVectorPosition.z).z;
+
+        var position = new vec3(normalizedX, normalizedY, normalizedZ);
         
         forward.y = 0
         
-        this.getTransform().setWorldPosition(head.add(pos))
-        this.getTransform().setWorldRotation(quat.lookAt(pos.uniformScale(-1), vec3.up()))
+        this.getTransform().setWorldPosition(head.add(position))
+        // this.getTransform().setWorldRotation(quat.lookAt(position.uniformScale(-1), vec3.up()))
     }
 }
