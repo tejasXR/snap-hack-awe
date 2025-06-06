@@ -29,7 +29,9 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     descriptionContainer: false
+    descriptionTweenTime: false
     interaction: false
+    originalStateTweenTime: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -37,9 +39,13 @@
   DefaultScriptInputs:
     - interaction: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
       descriptionContainer: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      descriptionTweenTime: !<float> 1500.000000
+      originalStateTweenTime: !<float> 1500.000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input AssignableType interaction
     - // @input SceneObject descriptionContainer
+    - '// @input float descriptionTweenTime = "400"'
+    - '// @input float originalStateTweenTime = "1500"'
