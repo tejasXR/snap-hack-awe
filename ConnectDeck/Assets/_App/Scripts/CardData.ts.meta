@@ -1,0 +1,51 @@
+- !<AssetImportMetadata/275fc314-965e-49ce-9fe3-ade8542fef6f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5b408441-4af4-476d-9f78-a078caa97c8f
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> c15d8e61-d316-42a2-ad13-4961f892bf17
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/c15d8e61-d316-42a2-ad13-4961f892bf17>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: face4da9-0f5f-4c7e-8b58-093fe2214d9a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    cardFace: false
+    cardName: false
+    details: false
+    iceBreaker: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - cardName: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      cardFace: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      details: ""
+      iceBreaker: ""
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.Material cardName
+    - // @input Asset.Material cardFace
+    - // @input string details
+    - // @input string iceBreaker
