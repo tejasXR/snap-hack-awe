@@ -31,6 +31,7 @@
     cardFace: false
     cardName: false
     details: false
+    headerIceBreaker: false
     iceBreaker: false
   ScriptTypesHidden:
     {}
@@ -41,6 +42,7 @@
       cardFace: !<reference.Material> 00000000-0000-0000-0000-000000000000
       details: ""
       iceBreaker: ""
+      headerIceBreaker: ""
   ScriptTypes:
     -
       {}
@@ -49,3 +51,4 @@
     - // @input Asset.Material cardFace
     - // @input string details
     - // @input string iceBreaker
+    - // @input string headerIceBreaker
