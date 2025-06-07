@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/c396cf65-48b2-4cbd-b247-d83213757edc>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 57415c49-c247-4988-93a1-669ba77bc96d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 57415c49-c247-4988-93a1-669ba77bc96d
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> f8a0d4d1-2e0f-4d8c-83b9-0248cc71b146
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/f8a0d4d1-2e0f-4d8c-83b9-0248cc71b146>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 759d6903-526d-4cf6-8d66-0cfe03d5ca1c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    iceBreakerPrefab: false
+    instantiator: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - instantiator: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      iceBreakerPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input AssignableType instantiator
+    - // @input Asset.ObjectPrefab iceBreakerPrefab
