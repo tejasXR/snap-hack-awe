@@ -8,21 +8,12 @@ export class HeaderIceBreaker extends BaseScriptComponent {
     @input iceBreakerDetail: Text;
     @input("float", "10") distanceAboveHead:number;
 
-    // private worldCamera: WorldCameraFinderProvider
-
-
     constructor()
     {
-        super();
-        // this.worldCamera = WorldCameraFinderProvider.getInstance();
-    
+        super();    
         this.createEvent('UpdateEvent').bind(() => {
             this.onUpdate();
         })
-
-        // SessionController.getInstance().onHostUpdated.add(() => {
-        //     this.onHostUpdate();
-        // });
     }
 
     private onUpdate()
@@ -52,7 +43,6 @@ export class HeaderIceBreaker extends BaseScriptComponent {
 
     public setup(iceBreakerStatement:string)
     {
-        this.getTransform().setWorldPosition
         this.iceBreakerDetail.text = iceBreakerStatement;
     }
 }

@@ -13,8 +13,6 @@ export class SessionConnector extends BaseScriptComponent {
     @input connectOnStart: boolean;
     @input enableOnConnected: SceneObject;
     @input syncedInstantiator: SyncedInstantiator;
-    // @input instantiatorParent: SceneObject;
-    // @input wayfinderObject: SceneObject;
         
     constructor()
     {
