@@ -27,6 +27,11 @@ export class HeaderIceBreaker extends BaseScriptComponent {
 
     private onUpdate()
     {
+        if (!SessionController)
+        {
+            return;
+        }
+
         if (!SessionController.getInstance().isColocated)
         {
             return;
