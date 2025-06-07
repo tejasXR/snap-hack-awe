@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/25d21239-00a3-4530-8d31-f88f775068dd>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> cc831c9e-cf18-409e-a23f-e6a9c7d8679e
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> cc831c9e-cf18-409e-a23f-e6a9c7d8679e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ae23cc38-e726-4e92-99f2-a039a1e0dd7a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ae23cc38-e726-4e92-99f2-a039a1e0dd7a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 1a95ce62-a5ed-42ae-b1e9-563cd12d0f8f
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    distanceAboveHead: false
+    iceBreakerDetail: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - iceBreakerDetail: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      distanceAboveHead: !<float> 10.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Text iceBreakerDetail
+    - '// @input float distanceAboveHead = "10"'
