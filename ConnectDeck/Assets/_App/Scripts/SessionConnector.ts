@@ -1,17 +1,18 @@
 import {PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
 import WorldCameraFinderProvider from "SpectaclesInteractionKit.lspkg/Providers/CameraProvider/WorldCameraFinderProvider"
 import {SessionController} from "SpectaclesSyncKit.lspkg/Core/SessionController"
-import { InstantiatorExample } from "../../SpectaclesSyncKit.lspkg/Examples/InstantiatorExample"
 import { Instantiator } from "SpectaclesSyncKit.lspkg/Components/Instantiator"
+import { Interactable } from "SpectaclesInteractionKit.lspkg/Components/Interaction/Interactable/Interactable"
+import { SyncedInstantiator } from "_App/Scripts/SyncedInstantiator"
+
 
 @component
 export class SessionConnector extends BaseScriptComponent {
     
-    @input private readonly sendConnectionButton: PinchButton
-
+    @input sendConnectionButton: Interactable;
     @input connectOnStart: boolean;
     @input enableOnConnected: SceneObject;
-    @input instantiatorExample: InstantiatorExample;
+    @input syncedInstantiator: SyncedInstantiator;
     // @input instantiatorParent: SceneObject;
     // @input wayfinderObject: SceneObject;
         
@@ -32,11 +33,10 @@ export class SessionConnector extends BaseScriptComponent {
         SessionController.getInstance().onConnected.add(()=> 
         {
             this.enableOnConnected.enabled = true;
-            this.instantiatorExample.getSceneObject().enabled = true;;
             print("Session is connected!");
         });
 
-        this.sendConnectionButton.onButtonPinched.add(() => this.startConnectedSession())
+        this.sendConnectionButton.onTriggerStart.add(() => this.startConnectedSession())
 
         if (this.connectOnStart)
         {
@@ -48,6 +48,7 @@ export class SessionConnector extends BaseScriptComponent {
     {
         // this.sendConnectionButton.getSceneObject().enabled = false;
         SessionController.getInstance().init();
+        this.syncedInstantiator.instantiateSyncedObject();
 
         // SessionController.getInstance().setColocatedBuildStatus(ColocatedBuildStatus.None);
         // SessionController.getInstance().setColocatedMapId("");
