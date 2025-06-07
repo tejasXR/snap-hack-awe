@@ -31,7 +31,7 @@
       value: 0
     baseColor:
       typeIdx: 5
-      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      value: {x: 0.058824, y: 0.149020, z: 0.415686, w: 1.000000}
     baseTex:
       typeIdx: 9
       value:
