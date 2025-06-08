@@ -39,7 +39,7 @@ export class LogoTween extends BaseScriptComponent {
          destinationPosition,
          this.tweenTime
        )
-         .easing(Easing.Cubic.InOut)
+         .easing(Easing.Sinusoidal.InOut)
          .delay(100) // There is a bug in TweenJS where the yoyo value will jump if no delay is set.
          .yoyo(true)
          .repeat(Infinity)
