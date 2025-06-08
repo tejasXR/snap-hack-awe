@@ -1,0 +1,42 @@
+- !<AssetImportMetadata/a5f6e050-fee3-4a84-b8ad-1b36a841ff5f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 7dc29ddb-0136-4cf6-9389-b33d67c59976
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 7dc29ddb-0136-4cf6-9389-b33d67c59976
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> a78f2a64-661d-4327-89bf-4b1191438fd0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/a78f2a64-661d-4327-89bf-4b1191438fd0>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 70c9b87e-4e82-466a-8645-1fe1c5ae7ef1
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    tweenTime: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - tweenTime: !<float> 250.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float tweenTime = "250"'
