@@ -1,6 +1,9 @@
 import { BoxController } from "_App/Scripts/BoxController";
 import { CardController } from "./CardController";
 import { CardData } from "./CardData";
+import { MinimizedCardController } from "_App/Scripts/MinimizedCardController";
+import { HeaderIceBreaker } from "./HeaderIceBreaker";
+import { SyncedInstantiator } from "./SyncedInstantiator";
 
 @component
 export class CardConfiguration extends BaseScriptComponent {
@@ -8,8 +11,10 @@ export class CardConfiguration extends BaseScriptComponent {
     @input boxController: BoxController;
     @input cardDatas: CardData[];
     @input cardToConfigure: CardController;
+    @input minmizedCardToConfigure: MinimizedCardController;
+    @input syncedInstantiator: SyncedInstantiator;
 
-      constructor()
+    constructor()
     {
         super();
         this.createEvent('OnStartEvent').bind(() => {
@@ -36,5 +41,7 @@ export class CardConfiguration extends BaseScriptComponent {
         var randomCardData = this.cardDatas[randomIndex];
 
         this.cardToConfigure.setup(randomCardData);
+        this.minmizedCardToConfigure.setup(randomCardData.cardName, randomCardData.cardMinimized);
+        this.syncedInstantiator.setup(randomCardData.headerIceBreaker);
     }
 }
