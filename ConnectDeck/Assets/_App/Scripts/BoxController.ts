@@ -17,10 +17,12 @@ export class BoxController extends BaseScriptComponent {
     @input boxModel: SceneObject;
     @input rotationTime: number;
     @input boxTextLayers: BoxTextLayer[];
+    @input welcomeAudio: AudioComponent;
 
     private stepIndex: number;
     private maxSteps: number;
     private isRotating: boolean;
+    private hasPlayedAudio: boolean;
 
     constructor()
     {
@@ -93,6 +95,11 @@ export class BoxController extends BaseScriptComponent {
 
     private goToStep(stepIndex:number)
     {
+        if (stepIndex == 1)
+        {
+            this.playWelcomeMessage();
+        }
+
         this.prevButton.getSceneObject().enabled = stepIndex != 0;
         this.nextButton.getSceneObject().enabled = stepIndex != this.maxSteps - 1;
         this.boxOpenInteraction.enabled = stepIndex == this.maxSteps - 1;
@@ -176,5 +183,16 @@ export class BoxController extends BaseScriptComponent {
         {
             this.onBoxOpenedCallback();
         }
+    }
+
+    private playWelcomeMessage()
+    {
+        if (this.hasPlayedAudio)
+        {
+            return;
+        }
+
+        this.welcomeAudio.play(0);
+        this.hasPlayedAudio = true;
     }
 }

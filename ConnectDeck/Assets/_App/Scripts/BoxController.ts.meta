@@ -34,6 +34,7 @@
     nextButton: false
     prevButton: false
     rotationTime: false
+    welcomeAudio: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -46,6 +47,7 @@
       rotationTime: !<float> 0.000000
       boxTextLayers: !<MappingBased.AssignableType_3[]>
         []
+      welcomeAudio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -56,3 +58,4 @@
     - // @input SceneObject boxModel
     - // @input float rotationTime
     - "// @input AssignableType_3[] boxTextLayers"
+    - // @input Component.AudioComponent welcomeAudio
