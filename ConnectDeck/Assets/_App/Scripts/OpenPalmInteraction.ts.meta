@@ -28,21 +28,33 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    cardController: false
     cardUi: false
     cardUiOffset: false
+    compass: false
+    compassOffset: false
     leftHand: false
+    rightHand: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+    - cardController: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      rightHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       cardUiOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       cardUi: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      compassOffset: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      compass: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - // @input AssignableType cardController
     - // @input SceneObject leftHand
+    - // @input SceneObject rightHand
     - // @input vec3 cardUiOffset
     - // @input SceneObject cardUi
+    - // @input vec3 compassOffset
+    - // @input SceneObject compass
