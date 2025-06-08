@@ -2,7 +2,8 @@ import { PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchBu
 import { InteractorEvent } from "SpectaclesInteractionKit.lspkg/Core/Interactor/InteractorEvent";
 import { Easing } from "LSTween.lspkg/TweenJS/Easing";
 import { LSTween } from "LSTween.lspkg/LSTween";
-import { BoxOpenInteraction } from "_App/Scripts/BoxOpenInteraction";
+import { BoxOpenInteraction } from "./BoxOpenInteraction";
+import { BoxTextLayer } from "./BoxTextLayer";
 
 @component
 export class BoxController extends BaseScriptComponent {
@@ -15,6 +16,7 @@ export class BoxController extends BaseScriptComponent {
     @input nextButton: PinchButton;
     @input boxModel: SceneObject;
     @input rotationTime: number;
+    @input boxTextLayers: BoxTextLayer[];
 
     private stepIndex: number;
     private maxSteps: number;
@@ -50,6 +52,9 @@ export class BoxController extends BaseScriptComponent {
         this.nextButton.onButtonPinched.add(nextButtonPressed)
 
         this.prevButton.getSceneObject().enabled = false;
+
+        this.hideBoxTextLayers();
+        this.boxTextLayers[0].show();
     }
 
     private previousSide()
@@ -93,6 +98,13 @@ export class BoxController extends BaseScriptComponent {
         this.boxOpenInteraction.enabled = stepIndex == this.maxSteps - 1;
     }
 
+    private hideBoxTextLayers()
+    {
+        this.boxTextLayers.forEach(boxText => {
+            boxText.hide();
+        });
+    }
+
     private rotateBox(rotateRight:boolean) 
     {
         this.isRotating = true;
@@ -128,12 +140,16 @@ export class BoxController extends BaseScriptComponent {
         {
             // Set the object's world rotation to the new rotation
             this.boxModel.getTransform().setWorldRotation(newRotation);
+            this.boxTextLayers[this.stepIndex].show();
             this.isRotating = false;
         });
     }
 
     private boxOpen()
     {
+         this.prevButton.getSceneObject().enabled = false;
+        this.nextButton.getSceneObject().enabled = false;
+
           // Get the object's current local scale
         var currentScale = this.boxModel.getTransform().getLocalScale();
 
@@ -154,8 +170,6 @@ export class BoxController extends BaseScriptComponent {
             // Set the object's world rotation to the new rotation
             this.boxModel.getTransform().setLocalScale(newScale);
             this.boxModel.enabled = false;
-            this.prevButton.getSceneObject().enabled = false;
-            this.nextButton.getSceneObject().enabled = false;
         });
 
         if (this.onBoxOpenedCallback)

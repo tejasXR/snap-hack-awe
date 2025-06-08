@@ -30,6 +30,7 @@
   ScriptInputsHidden:
     boxModel: false
     boxOpenInteraction: false
+    boxTextLayers: false
     nextButton: false
     prevButton: false
     rotationTime: false
@@ -43,6 +44,8 @@
       nextButton: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
       boxModel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       rotationTime: !<float> 0.000000
+      boxTextLayers: !<MappingBased.AssignableType_3[]>
+        []
   ScriptTypes:
     -
       {}
@@ -52,3 +55,4 @@
     - // @input AssignableType_2 nextButton
     - // @input SceneObject boxModel
     - // @input float rotationTime
+    - "// @input AssignableType_3[] boxTextLayers"
