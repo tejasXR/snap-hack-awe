@@ -5196,30 +5196,6 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
-- !<ScriptComponent/2a2e7286-5523-4eb7-8c7a-a3af0d60428e>
-  PrefabRemaps:
-    []
-  Name: Billboard
-  Enabled: true
-  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
-  ScriptInputsDefault:
-    _yAxisEnabled: true
-    _zAxisEnabled: true
-    _axisBufferDegrees: true
-    duration: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      _xAxisEnabled: true
-      _yAxisEnabled: true
-      _zAxisEnabled: false
-      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
-      duration: 0.033000
-  ScriptTypes:
-    "":
-      {}
 - !<ScriptComponent/2a37572f-d266-4e71-9c46-9604e10b72b8>
   PrefabRemaps:
     []
@@ -8361,21 +8337,6 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/42366f2b-95ec-45a5-baac-fc831631bae9>
-  PrefabRemaps:
-    []
-  Name: Sphere
-  Enabled: false
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.555450, z: 0.000000}
-    rotation: {x: 90.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 0.700000, y: 1.750000, z: 0.875000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> c8d7991f-e758-4ac2-ac51-75292b856070
 - !<SceneObject/423f1b7d-4183-46ad-85ad-b0dd34e23ac3>
   PrefabRemaps:
     []
@@ -9772,9 +9733,9 @@
       cardController: !<MappingBased.AssignableType> df1b6092-0b92-4113-8245-66ac23355c4c
       leftHand: !<reference.SceneObject> 8ecdc064-9efe-4dae-87fc-1b12a3be1f15
       rightHand: !<reference.SceneObject> 5344dc26-881d-4d30-8999-94f04eeb1084
-      cardUiOffset: !<Vec3> {x: 0.000000, y: 4.000000, z: 0.000000}
+      cardUiOffset: !<Vec3> {x: 0.000000, y: 8.000000, z: 0.000000}
       cardUi: !<reference.SceneObject> f1920bf5-bdd9-4399-9f39-e73a038096f4
-      compassOffset: !<Vec3> {x: 0.000000, y: 4.000000, z: 0.000000}
+      compassOffset: !<Vec3> {x: 0.000000, y: 8.000000, z: 0.000000}
       compass: !<reference.SceneObject> 5b92db6e-0d2b-43f9-89c0-cd4ecac61ccb
   ScriptTypes:
     "":
@@ -10477,6 +10438,30 @@
     []
   Components:
     - !<own> 476c46b4-5598-42f2-b0d7-0ad2b704b58b
+- !<ScriptComponent/5432d5dd-e02f-454c-a0a9-324d97815d38>
+  PrefabRemaps:
+    []
+  Name: Billboard
+  Enabled: true
+  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  ScriptInputsDefault:
+    _yAxisEnabled: true
+    _zAxisEnabled: true
+    _axisBufferDegrees: true
+    duration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _xAxisEnabled: true
+      _yAxisEnabled: true
+      _zAxisEnabled: false
+      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
+      duration: 0.033000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/54581b83-1430-4af8-a7e2-3fb0a0b0d05a>
   PrefabRemaps:
     []
@@ -14315,7 +14300,6 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> dddd8515-7d68-4913-99b2-7df7f19f9ecd
-    - !<own> 42366f2b-95ec-45a5-baac-fc831631bae9
   Components:
     []
 - !<SceneObject/70504fb6-c526-4667-9a0c-b9e9018b441b>
@@ -24853,26 +24837,6 @@
     []
   Components:
     []
-- !<RenderMeshVisual/c8d7991f-e758-4ac2-ac51-75292b856070>
-  PrefabRemaps:
-    []
-  Name: Render Mesh Visual
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Stretch
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> fe772b05-4f26-4b0e-9143-59b92f40362f
-  Mesh: !<reference> 2e5e428e-9a20-4c3f-ad4a-4451f07df611
-  Skin: !<reference> 00000000-0000-0000-0000-000000000000
-  BlendShapesEnabled: true
-  BlendNormals: false
-  BlendShapes:
-    {}
 - !<SceneObject/c8e5e81c-963b-4987-a676-dd05558e59db>
   PrefabRemaps:
     []
@@ -28236,7 +28200,7 @@
         - !<reference> c9eeb574-dca2-4d41-aff4-e7b2b7513a3a
       cardToConfigure: !<MappingBased.AssignableType_2> df1b6092-0b92-4113-8245-66ac23355c4c
       minmizedCardToConfigure: !<MappingBased.AssignableType_3> 40f32efd-15fc-4111-b2be-5ab165144721
-      syncedInstnatiator: !<MappingBased.AssignableType_4> 81e7fb60-7007-46d8-8688-8801b70e2d5b
+      syncedInstantiator: !<MappingBased.AssignableType_4> 81e7fb60-7007-46d8-8688-8801b70e2d5b
   ScriptTypes:
     "":
       {}
@@ -30161,6 +30125,7 @@
   Components:
     - !<own> 908e5580-27bc-4f0e-b1f7-894dce401e57
     - !<own> 40f32efd-15fc-4111-b2be-5ab165144721
+    - !<own> 5432d5dd-e02f-454c-a0a9-324d97815d38
 - !<ColliderComponent/f1d4409e-f469-47bc-abe1-9ac7fcba4a03>
   PrefabRemaps:
     []
@@ -31137,7 +31102,7 @@
     - !<own> 49acfa49-e82b-485e-8b36-9f0b89450a46
     - !<own> 72579d26-265a-4683-9dce-9cd77893124d
   Components:
-    - !<own> 2a2e7286-5523-4eb7-8c7a-a3af0d60428e
+    []
 - !<RenderMeshVisual/fa1506e2-4875-4a25-a3f0-6e134c7bcc52>
   PrefabRemaps:
     []
