@@ -29,6 +29,7 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     cardFace: false
+    cardMinimized: false
     cardName: false
     details: false
     headerIceBreaker: false
@@ -40,6 +41,7 @@
   DefaultScriptInputs:
     - cardName: !<reference.Material> 00000000-0000-0000-0000-000000000000
       cardFace: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      cardMinimized: !<reference.Material> 00000000-0000-0000-0000-000000000000
       details: ""
       iceBreaker: ""
       headerIceBreaker: ""
@@ -49,6 +51,7 @@
   InputLines:
     - // @input Asset.Material cardName
     - // @input Asset.Material cardFace
+    - // @input Asset.Material cardMinimized
     - // @input string details
     - // @input string iceBreaker
     - // @input string headerIceBreaker
