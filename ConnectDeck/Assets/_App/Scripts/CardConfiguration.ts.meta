@@ -32,7 +32,7 @@
     cardDatas: false
     cardToConfigure: false
     minmizedCardToConfigure: false
-    syncedInstnatiator: false
+    syncedInstantiator: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -43,7 +43,7 @@
         []
       cardToConfigure: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
       minmizedCardToConfigure: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
-      syncedInstnatiator: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      syncedInstantiator: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -52,4 +52,4 @@
     - "// @input AssignableType_1[] cardDatas"
     - // @input AssignableType_2 cardToConfigure
     - // @input AssignableType_3 minmizedCardToConfigure
-    - // @input AssignableType_4 syncedInstnatiator
+    - // @input AssignableType_4 syncedInstantiator

@@ -3,7 +3,7 @@ import WorldCameraFinderProvider from "SpectaclesInteractionKit.lspkg/Providers/
 import {SessionController} from "SpectaclesSyncKit.lspkg/Core/SessionController"
 import { Instantiator } from "SpectaclesSyncKit.lspkg/Components/Instantiator"
 import { Interactable } from "SpectaclesInteractionKit.lspkg/Components/Interaction/Interactable/Interactable"
-import { SyncedInstantiator } from "_App/Scripts/SyncedInstantiator"
+import { SyncedInstantiator } from "./SyncedInstantiator"
 
 
 @component

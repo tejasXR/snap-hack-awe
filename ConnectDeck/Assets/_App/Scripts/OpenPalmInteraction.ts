@@ -1,4 +1,5 @@
-import { CardController } from "_App/Scripts/CardController";
+import { CardController } from "./CardController";
+import { SessionController } from "SpectaclesSyncKit.lspkg/Core/SessionController";
 
 @component
 export class OpenPalmInteraction extends BaseScriptComponent {
@@ -19,16 +20,16 @@ export class OpenPalmInteraction extends BaseScriptComponent {
     constructor()
     {
         super();
-
-        // this.createEvent('OnEnableEvent').bind(() => this.onEnable());
-        // this.createEvent('OnStartEvent').bind(() => this.onStart());
+        this.createEvent('OnStartEvent').bind(() => this.onStart());
     }
 
-    onAwake()
+    onStart()
     {
         this.cardController.onConnectionSentCallback = () => {
             this.onStartTracking();
         }
+
+        SessionController.getInstance().onConnected.add(() => this.onSessionStarted());
 
         this.cardUi.enabled = false;
         this.compass.enabled = false;
@@ -78,5 +79,9 @@ export class OpenPalmInteraction extends BaseScriptComponent {
 
             this.compass.getTransform().setWorldPosition(destPoint);
         });
+    }
+
+    private onSessionStarted(){
+        this.getSceneObject().enabled = false;
     }
 }

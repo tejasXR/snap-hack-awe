@@ -127,10 +127,13 @@ export class CardController extends BaseScriptComponent {
         .start()
         .onComplete(() =>
         {
-             if (this.onConnectionSentCallback)
+            if (this.onConnectionSentCallback)
             {
+                print("Connection event sent");
                 this.onConnectionSentCallback();
             }
+
+            // this.getSceneObject().enabled = false;
         });     
     }
 }

@@ -88,7 +88,6 @@ export class BoxController extends BaseScriptComponent {
 
     private goToStep(stepIndex:number)
     {
-        print("Step: " + stepIndex);
         this.prevButton.getSceneObject().enabled = stepIndex != 0;
         this.nextButton.getSceneObject().enabled = stepIndex != this.maxSteps - 1;
         this.boxOpenInteraction.enabled = stepIndex == this.maxSteps - 1;
@@ -133,9 +132,8 @@ export class BoxController extends BaseScriptComponent {
         });
     }
 
-    private boxOpen(){
-        print("Box Opened!")
-
+    private boxOpen()
+    {
           // Get the object's current local scale
         var currentScale = this.boxModel.getTransform().getLocalScale();
 
@@ -155,6 +153,7 @@ export class BoxController extends BaseScriptComponent {
         {
             // Set the object's world rotation to the new rotation
             this.boxModel.getTransform().setLocalScale(newScale);
+            this.boxModel.enabled = false;
             this.prevButton.getSceneObject().enabled = false;
             this.nextButton.getSceneObject().enabled = false;
         });

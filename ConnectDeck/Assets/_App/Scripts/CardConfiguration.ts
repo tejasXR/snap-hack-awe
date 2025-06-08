@@ -1,4 +1,4 @@
-import { BoxController } from "_App/Scripts/BoxController";
+import { BoxController } from "./BoxController";
 import { CardController } from "./CardController";
 import { CardData } from "./CardData";
 import { MinimizedCardController } from "_App/Scripts/MinimizedCardController";
@@ -22,7 +22,7 @@ export class CardConfiguration extends BaseScriptComponent {
         });
     }
 
-    private onStart() 
+    onStart() 
     {
         this.boxController.onBoxOpenedCallback = () => {
             this.onBoxOpened();
