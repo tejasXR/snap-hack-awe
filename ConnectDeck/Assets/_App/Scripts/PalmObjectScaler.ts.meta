@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/eef4e8c8-ea8e-438d-824e-5aac5b305821>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> ed8f933c-df0a-4b99-91d6-037c47b69298
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> ed8f933c-df0a-4b99-91d6-037c47b69298
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 226d68d9-d8f4-43d5-8e8e-5ad04139706b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/226d68d9-d8f4-43d5-8e8e-5ad04139706b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 30071510-a977-437b-ba2a-3ea723811845
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    container: false
+    tweenTime: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - container: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tweenTime: !<float> 0.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject container
+    - // @input float tweenTime
