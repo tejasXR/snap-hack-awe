@@ -28,30 +28,39 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    animateTweenTime: false
+    animateInTweenTime: false
+    animateOutTweenTime: false
     billboard: false
     cardFace: false
     cardName: false
     details: false
     iceBreaker: false
+    leftHand: false
+    sendConnectionButton: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - cardName: !<reference.Image> 00000000-0000-0000-0000-000000000000
+    - leftHand: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      cardName: !<reference.Image> 00000000-0000-0000-0000-000000000000
       cardFace: !<reference.Image> 00000000-0000-0000-0000-000000000000
       details: !<reference.Text> 00000000-0000-0000-0000-000000000000
       iceBreaker: !<reference.Text> 00000000-0000-0000-0000-000000000000
-      animateTweenTime: !<float> 1000.000000
+      animateInTweenTime: !<float> 1000.000000
+      animateOutTweenTime: !<float> 1000.000000
       billboard: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      sendConnectionButton: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
+    - // @input SceneObject leftHand
     - // @input Component.Image cardName
     - // @input Component.Image cardFace
     - // @input Component.Text details
     - // @input Component.Text iceBreaker
-    - '// @input float animateTweenTime = "1000"'
+    - '// @input float animateInTweenTime = "1000"'
+    - '// @input float animateOutTweenTime = "1000"'
     - // @input AssignableType billboard
+    - // @input AssignableType_1 sendConnectionButton

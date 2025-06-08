@@ -1,28 +1,40 @@
 import { CardData } from "./CardData";
 import { LSTween } from "LSTween.lspkg/LSTween";
 import { Billboard } from "SpectaclesInteractionKit.lspkg/Components/Interaction/Billboard/Billboard";
+import { PinchButton } from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton";
 import { Easing } from "SpectaclesSyncKit.lspkg/Mapping/src/UI/ObjectLocator/animations/tween";
+import { InteractorEvent } from "SpectaclesInteractionKit.lspkg/Core/Interactor/InteractorEvent";
 
 @component
 export class CardController extends BaseScriptComponent {
     
+    public onConnectionSentCallback?: () => void;
+
+    @input leftHand: SceneObject;
     @input cardName: Image;
     @input cardFace: Image;
     @input details: Text;
     @input iceBreaker: Text;
-    @input("float", "1000") animateTweenTime: number;
-
+    @input("float", "1000") animateInTweenTime: number;
+    @input("float", "1000") animateOutTweenTime: number;
     @input billboard: Billboard
 
-    constructor() {
+    @input sendConnectionButton: PinchButton;
+
+    constructor() 
+    {
         super();
+        
         this.createEvent('OnStartEvent').bind(() => {
             this.onStart();
-        })
+        });
+
     }
 
     private onStart()
     {
+        this.sendConnectionButton.onButtonPinched.add(() => this.onConnectionSent());
+
         this.getTransform().setWorldScale(vec3.zero());
 
         var rotationToApply = quat.fromEulerAngles(0, -180, 0);
@@ -61,7 +73,7 @@ export class CardController extends BaseScriptComponent {
                 this.getTransform(),
                 this.getTransform().getWorldScale(),
                 newScale,
-                this.animateTweenTime
+                this.animateOutTweenTime
         )
         .easing(Easing.Back.Out)
         .start()
@@ -80,7 +92,7 @@ export class CardController extends BaseScriptComponent {
                 this.getTransform(),
                 currentRotation,
                 rotationToApply,
-                this.animateTweenTime
+                this.animateInTweenTime
         )
         .easing(Easing.Back.Out)
         .start()
@@ -90,5 +102,35 @@ export class CardController extends BaseScriptComponent {
             this.getTransform().setWorldRotation(rotationToApply);
             this.billboard.enabled = true;
         });
+    }
+
+    private onConnectionSent()
+    {
+        // Scale
+        LSTween.scaleToWorld
+        (
+                this.getTransform(),
+                vec3.zero(),
+                this.animateOutTweenTime
+        )
+        .easing(Easing.Exponential.InOut)
+        .start();
+
+        // Move
+        LSTween.moveToWorld
+        (
+                this.getTransform(),
+                this.leftHand.getTransform().getWorldPosition(),
+                this.animateOutTweenTime
+        )
+        .easing(Easing.Exponential.In)
+        .start()
+        .onComplete(() =>
+        {
+             if (this.onConnectionSentCallback)
+            {
+                this.onConnectionSentCallback();
+            }
+        });     
     }
 }
