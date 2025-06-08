@@ -4,6 +4,7 @@ import { CardData } from "./CardData";
 import { MinimizedCardController } from "_App/Scripts/MinimizedCardController";
 import { HeaderIceBreaker } from "./HeaderIceBreaker";
 import { SyncedInstantiator } from "./SyncedInstantiator";
+import { WayfinderController } from "./WayfinderController";
 
 @component
 export class CardConfiguration extends BaseScriptComponent {
@@ -12,6 +13,7 @@ export class CardConfiguration extends BaseScriptComponent {
     @input cardDatas: CardData[];
     @input cardToConfigure: CardController;
     @input minmizedCardToConfigure: MinimizedCardController;
+    @input wayfinderController: WayfinderController;
     @input syncedInstantiator: SyncedInstantiator;
 
     constructor()
@@ -43,5 +45,6 @@ export class CardConfiguration extends BaseScriptComponent {
         this.cardToConfigure.setup(randomCardData);
         this.minmizedCardToConfigure.setup(randomCardData.cardName, randomCardData.cardMinimized);
         this.syncedInstantiator.setup(randomCardData.headerIceBreaker);
+        this.wayfinderController.setup(randomCardData.cardName);
     }
 }

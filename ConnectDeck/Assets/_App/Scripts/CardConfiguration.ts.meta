@@ -33,6 +33,7 @@
     cardToConfigure: false
     minmizedCardToConfigure: false
     syncedInstantiator: false
+    wayfinderController: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -43,7 +44,8 @@
         []
       cardToConfigure: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
       minmizedCardToConfigure: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
-      syncedInstantiator: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      wayfinderController: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      syncedInstantiator: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -52,4 +54,5 @@
     - "// @input AssignableType_1[] cardDatas"
     - // @input AssignableType_2 cardToConfigure
     - // @input AssignableType_3 minmizedCardToConfigure
-    - // @input AssignableType_4 syncedInstantiator
+    - // @input AssignableType_4 wayfinderController
+    - // @input AssignableType_5 syncedInstantiator
