@@ -1,0 +1,887 @@
+- !<AssetImportMetadata/2caeeea0-5ce7-46a4-88aa-c050e8882293>
+  ImportedAssetIds:
+    .hidden/Material_0: !<reference> 0f449277-59cc-4012-80e0-4d44c4a0de64
+    .hidden/white: !<reference> 26231092-0401-4ee3-acaf-5f2454619a8c
+    01ba877cbd26cbf0: !<reference> 72bac5b5-f5d7-43e3-91a4-adfcd7d74a49
+    19a7bb8fc667f3e5: !<reference> cb37260d-46b6-4e01-9449-823c4a423598
+    2028ca51e4a54211: !<reference> 5c3befaa-e729-4323-a7a2-1a1dec54c96b
+    28f3a7b857562edb: !<reference> 74e7ea3d-9171-4e08-879b-e74d2c02cc4f
+    32f65f66620987ee: !<reference> 8f7a6280-4be7-434f-b256-3969b892fb45
+    514d33d87faf579d: !<reference> 0e09a795-ea76-4567-9c57-874968a4a669
+    595f6e486ab69597: !<reference> caeb0317-4ceb-48da-95a4-218fade999fa
+    5e6701e7e7d3bb34: !<reference> 733f7030-0a71-4dd1-978a-968052b1e84f
+    683ba510dfc8b870: !<reference> 732df0b6-d453-4032-8ac4-4c64aa4ce062
+    6d493e9275cca801: !<reference> d207d038-10df-4794-80a3-7ff777292904
+    72fbf9904d4f5325: !<reference> 26bca28f-ed1b-4522-a857-fcac3874c169
+    7a0dd5cd69df73fa: !<reference> 550dca32-5dc0-4a6a-a2e0-71057582bd74
+    7f7f4aa2be6cb601: !<reference> 6029217f-d278-4ecb-b5f1-40c764c3d7af
+    821eefa3f32c8cd8: !<reference> 64bf9659-820b-49f2-b2c8-1cd8b8d0a0a7
+    82e4fb486e3c2c2f: !<reference> 7b507928-0cfa-4e7c-8962-521433a9f984
+    9875ec1a187ce497: !<reference> acb688eb-fa60-4151-817d-5a1d5ac73980
+    9c1853b91408e111: !<reference> b63c97e8-305c-4720-9085-5d8e597cb362
+    Animations/Izzy - PNG.png_Izzy - PNG.pngAction: !<reference> 62cd2bc9-2d60-48d3-a5d0-c30dca891cb3
+    Animations/Izzy - PNG.png_Node_0.002Action: !<reference> 68f2d8f6-b8c8-484c-ac12-1df0c8bc95e9
+    Animations/Izzy - PNG.png_Node_0.002Action.001: !<reference> c8a1fc07-28c5-4ef2-a292-4e96ae456d86
+    Animations/Izzy - PNG.png_heart.001Action: !<reference> 92f91955-f0c8-4447-bfb4-b52979b2d174
+    Animations/Izzy - PNG.png_meghna - PNG.pngAction: !<reference> e63ac9d8-b8a3-40ae-ae9b-49a33313d39d
+    Animations/Node_0.002_Izzy - PNG.pngAction: !<reference> febb3e2c-bc7f-4b76-80c1-4605b079d55e
+    Animations/Node_0.002_Node_0.002Action: !<reference> 257d2bda-4549-413a-93b0-c20e8fc424ec
+    Animations/Node_0.002_Node_0.002Action.001: !<reference> f436c5f1-c3b7-4d02-93b8-e32f3fbe70a5
+    Animations/Node_0.002_heart.001Action: !<reference> 1d587752-75dc-454f-9763-0a84c3f6ee1d
+    Animations/Node_0.002_meghna - PNG.pngAction: !<reference> 0036dfdf-af49-4749-aefa-43b7df163ddd
+    Animations/heart.001_Izzy - PNG.pngAction: !<reference> ea0a4a4d-6c54-49f3-b304-5ac30c463e1c
+    Animations/heart.001_Node_0.002Action: !<reference> c776bb4b-b377-4c88-a5f6-fb9561395a4a
+    Animations/heart.001_Node_0.002Action.001: !<reference> 875adf70-da00-4ab3-a2d9-9937cedc477f
+    Animations/heart.001_heart.001Action: !<reference> 56cbb404-28eb-43fd-8a3e-278890bd36da
+    Animations/heart.001_meghna - PNG.pngAction: !<reference> 2c7e8c9c-69c8-4f92-9fbd-00f9179fd580
+    Animations/meghna - PNG.png_Izzy - PNG.pngAction: !<reference> 9fba3f13-ed92-4517-a4c8-e86fc926434f
+    Animations/meghna - PNG.png_Node_0.002Action: !<reference> 82ea3a5c-208a-4580-9d52-af66a76db83f
+    Animations/meghna - PNG.png_Node_0.002Action.001: !<reference> 4ec56099-1872-47b0-af2f-77fa9c7f2864
+    Animations/meghna - PNG.png_heart.001Action: !<reference> 4fe4eb3d-38fd-4ffe-bfc7-9d02e2e75bce
+    Animations/meghna - PNG.png_meghna - PNG.pngAction: !<reference> 64052d45-f431-4a6d-aaf5-9bbd9a6988cc
+    Materials/Material_0: !<reference> b6c3dc1a-1a9a-4bae-acf2-cc7a1d0ca126
+    Materials/Material_0.001: !<reference> 78730722-4d16-46f1-a833-debf09055874
+    Materials/Material_0.001|Material_0.001|GraphPassInfo: !<reference> cb00a640-7620-4aa9-bdc2-f870e9e300f4
+    Materials/Material_0.002: !<reference> 77f39185-7fa5-48e3-b325-e076ba4a0ae1
+    Materials/Material_0.002|Material_0.002|GraphPassInfo: !<reference> d8ccbbd1-4fbb-43b4-abed-0d5dae669a70
+    Materials/Material_0|Material_0|GraphPassInfo: !<reference> c85d18e3-fde9-4253-b284-6101c56be7c2
+    Meshes/Izzy - PNG.png: !<reference> cb00e7ac-895f-49f8-a067-5d2a7cf8df3d
+    Meshes/heart.001: !<reference> 03485417-e21a-456d-88e4-4b7a2d82cdbd
+    Meshes/meghna - PNG.png: !<reference> f890eda7-ae9d-443d-8769-179632500bd1
+    Scene: !<reference> 2f635d3c-1f23-4990-8fd8-05382aa1e1c3
+    a529f6345e62ca02: !<reference> 7181b169-9c4f-451b-a974-18534e8c49d3
+    b92df293eb612103: !<reference> 9302ccdc-2590-4785-a51b-0886134bd38c
+    bcc7a1b91f256174: !<reference> 78aaf2a8-85f9-4008-a045-1631935f3b26
+    bd28eff6134f3722: !<reference> be4f7e7c-d887-46ef-a7ae-9bdbfd9b651a
+    c3d952bc4cf6430a: !<reference> 12898b13-b8b5-4f4d-a146-80df11fdfe73
+    d0808d91608b4684: !<reference> 92c92929-0df2-4ee2-8ab3-0b15fd435e7f
+    dc4440731c468ab8: !<reference> 768f8a57-daad-48c2-8152-ebfede36de47
+    dcdeb7d979de3bf9: !<reference> d55e9c5a-1419-4f89-a925-4d5a79b20ed1
+    fc467e6ab21f0d4f: !<reference> 5fbf7fd0-a81d-4144-a044-9ad55854ddb1
+    fd6a2d044ab9eb71: !<reference> 0a80875d-c61f-4212-a3de-025de9648f89
+  ImporterName: FbxImporter
+  PrimaryAsset: !<reference> 2f635d3c-1f23-4990-8fd8-05382aa1e1c3
+  PackageType: LegacyPackage
+  PackagePolicy: CanBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> c20a42af-0175-41a7-92fe-aa4df13b07bc
+  DependentFiles:
+    []
+  ImporterSettings: !<FbxImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangentsAndBinormals: true
+    RegenerateTangentsAndBinormals: false
+    RegenerateNormalsForSkinnedMeshes: true
+    ImportBlendShapeAnimation: true
+    ImportVertexAnimation: true
+    GeneratePivots: true
+    TriangulateNURBS: true
+    UseLegacyFbxLoader: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      jpg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/070c41ff-d452-44e3-88a3-b1f7f3016466>
+  PrefabRemaps:
+    []
+  Name: Light
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 407.624542, y: 590.386230, z: -100.545395}
+    rotation: {x: -132.466431, y: 72.779228, z: -169.256332}
+    scale: {x: 100.000008, y: 100.000000, z: 100.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7f0130ae-ef79-43b5-9dc0-98f8494bb545
+- !<SceneObject/0e7b1e14-94cb-443d-a91b-2c6a70ed1a71>
+  PrefabRemaps:
+    []
+  Name: Node_0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7f85f85e-7cd1-4711-b31a-9e33aa3a29b2
+  Components:
+    []
+- !<SceneObject/1fa854a0-705b-42c7-84a7-ad8e9f363ff5>
+  PrefabRemaps:
+    []
+  Name: cardconnectanimatoin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0e7b1e14-94cb-443d-a91b-2c6a70ed1a71
+    - !<own> f10792cc-fd42-46f4-b4fe-92d568e3b5b9
+    - !<own> 7b805d9b-1425-41fd-9e9e-69ad2ace1b55
+    - !<own> 070c41ff-d452-44e3-88a3-b1f7f3016466
+  Components:
+    - !<own> 2d9fa6a0-c7d5-48b7-86f9-b8d4d8f621b5
+- !<SceneObject/26af3002-0972-44c2-b561-609ac02f8020>
+  PrefabRemaps:
+    []
+  Name: pink 3D heart
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 61bf3fe9-c3b3-4735-9281-ef20e40f87a3
+  Components:
+    []
+- !<SceneObject/28636df6-6468-48a5-82d6-74de14742389>
+  PrefabRemaps:
+    []
+  Name: Izzy - PNG.png
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -0.537310, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 78436c94-1ec8-4cda-88e3-0df2bb6c073d
+- !<AnimationPlayer/2d9fa6a0-c7d5-48b7-86f9-b8d4d8f621b5>
+  PrefabRemaps:
+    []
+  Name: component_7
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 92f91955-f0c8-4447-bfb4-b52979b2d174
+      Name: Izzy - PNG.png|heart.001Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.000000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 62cd2bc9-2d60-48d3-a5d0-c30dca891cb3
+      Name: Izzy - PNG.png|Izzy - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 7.541667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> e63ac9d8-b8a3-40ae-ae9b-49a33313d39d
+      Name: Izzy - PNG.png|meghna - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 8.291667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 68f2d8f6-b8c8-484c-ac12-1df0c8bc95e9
+      Name: Izzy - PNG.png|Node_0.002Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.033333
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> c8a1fc07-28c5-4ef2-a292-4e96ae456d86
+      Name: Izzy - PNG.png|Node_0.002Action.001
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 5.125000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 4fe4eb3d-38fd-4ffe-bfc7-9d02e2e75bce
+      Name: meghna - PNG.png|heart.001Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.033333
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 9fba3f13-ed92-4517-a4c8-e86fc926434f
+      Name: meghna - PNG.png|Izzy - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 7.541667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 64052d45-f431-4a6d-aaf5-9bbd9a6988cc
+      Name: meghna - PNG.png|meghna - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 8.291667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 82ea3a5c-208a-4580-9d52-af66a76db83f
+      Name: meghna - PNG.png|Node_0.002Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.000000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 4ec56099-1872-47b0-af2f-77fa9c7f2864
+      Name: meghna - PNG.png|Node_0.002Action.001
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 5.125000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 1d587752-75dc-454f-9763-0a84c3f6ee1d
+      Name: Node_0.002|heart.001Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.033333
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> febb3e2c-bc7f-4b76-80c1-4605b079d55e
+      Name: Node_0.002|Izzy - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 7.541667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 0036dfdf-af49-4749-aefa-43b7df163ddd
+      Name: Node_0.002|meghna - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 8.291667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 257d2bda-4549-413a-93b0-c20e8fc424ec
+      Name: Node_0.002|Node_0.002Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.000000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> f436c5f1-c3b7-4d02-93b8-e32f3fbe70a5
+      Name: Node_0.002|Node_0.002Action.001
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 5.125000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 56cbb404-28eb-43fd-8a3e-278890bd36da
+      Name: heart.001|heart.001Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.033333
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> ea0a4a4d-6c54-49f3-b304-5ac30c463e1c
+      Name: heart.001|Izzy - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 7.541667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 2c7e8c9c-69c8-4f92-9fbd-00f9179fd580
+      Name: heart.001|meghna - PNG.pngAction
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 8.291667
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> c776bb4b-b377-4c88-a5f6-fb9561395a4a
+      Name: heart.001|Node_0.002Action
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 0.000000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 875adf70-da00-4ab3-a2d9-9937cedc477f
+      Name: heart.001|Node_0.002Action.001
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 5.125000
+      Offset: 0.000000
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+- !<ObjectPrefab/3b652d90-f6c6-421a-857b-73963c9a1cd0>
+  PackagePath: ""
+  objects:
+    - !<own> 1fa854a0-705b-42c7-84a7-ad8e9f363ff5
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/46c07148-2966-464e-944b-930b53e0f631>
+  PrefabRemaps:
+    []
+  Name: Camera.001
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -15.756284, y: -1190.400635, z: -15.848788}
+    rotation: {x: 90.000000, y: -0.000000, z: 90.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f3db2774-99e4-4d7d-8a12-d3e7ae12fef4
+- !<SceneObject/5210c478-b695-46ae-847d-df3b4aaa6292>
+  PrefabRemaps:
+    []
+  Name: Scene 1.002
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 26af3002-0972-44c2-b561-609ac02f8020
+    - !<own> 85b1d908-2a17-44c2-833f-b3d4250b99ed
+    - !<own> 8e392589-e9d1-43bb-8391-297785ec11fc
+  Components:
+    []
+- !<SceneObject/61bf3fe9-c3b3-4735-9281-ef20e40f87a3>
+  PrefabRemaps:
+    []
+  Name: heart
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d2ffa81e-c1de-434e-ab31-eb474c906aac
+  Components:
+    []
+- !<RenderMeshVisual/78436c94-1ec8-4cda-88e3-0df2bb6c073d>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> b6c3dc1a-1a9a-4bae-acf2-cc7a1d0ca126
+  Mesh: !<reference> cb00e7ac-895f-49f8-a067-5d2a7cf8df3d
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/7b805d9b-1425-41fd-9e9e-69ad2ace1b55>
+  PrefabRemaps:
+    []
+  Name: Node_0.002
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -12.994056, y: 519.938843, z: -95.234489}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 5210c478-b695-46ae-847d-df3b4aaa6292
+  Components:
+    []
+- !<RenderMeshVisual/7d0f5c11-f178-449c-aa2f-3e160cdc92b9>
+  PrefabRemaps:
+    []
+  Name: component_2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 78730722-4d16-46f1-a833-debf09055874
+  Mesh: !<reference> f890eda7-ae9d-443d-8769-179632500bd1
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<LightSource/7f0130ae-ef79-43b5-9dc0-98f8494bb545>
+  PrefabRemaps:
+    []
+  Name: component_6
+  Enabled: true
+  renderLayer: 1
+  LightType: Point
+  Intensity: 1000.000000
+  CastShadows: false
+  ShadowDensity: 1.000000
+  ShadowBlurRadius: 0.000000
+  ShadowTextureSize: 512
+  AutoLightSourcePosition: false
+  AutoShadowFrustumSize: false
+  AutoShadowFrustumSizeExtend: 2.000000
+  ShadowFrustumSize: 30.000000
+  ShadowFrustumNearClipPlane: 1.000000
+  ShadowFrustumFarClipPlane: 1000.000000
+  UseEnvMapFromCamera: false
+  EnvMapFromCameraMode: Auto
+  EstimationSharpness: 1.000000
+  EnvMapExposure: 1.000000
+  EnvMapRotation: 0.000000
+  DiffuseEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  SpecularEnvTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+  DynamicEnvInputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  InnerConeAngle: 0.000000
+  OuterConeAngle: 1.000000
+  DecayType: None
+  DecayLimit: false
+  DecayRange: 1.000000
+- !<SceneObject/7f85f85e-7cd1-4711-b31a-9e33aa3a29b2>
+  PrefabRemaps:
+    []
+  Name: Scene 1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 28636df6-6468-48a5-82d6-74de14742389
+    - !<own> 46c07148-2966-464e-944b-930b53e0f631
+    - !<own> 8e3e21c4-a1bf-4f56-9351-8a282027f666
+  Components:
+    []
+- !<SceneObject/7f9747a3-9b28-4497-b33d-8bcaa078b6fe>
+  PrefabRemaps:
+    []
+  Name: Scene 1.001
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f6877f14-62e6-42ca-8326-f63502e1bfcd
+    - !<own> 81740c83-38c5-42a4-b87d-c95f1289c53d
+    - !<own> e048472a-3af5-49ed-a68e-f2417e4f3334
+  Components:
+    []
+- !<SceneObject/81740c83-38c5-42a4-b87d-c95f1289c53d>
+  PrefabRemaps:
+    []
+  Name: Camera.002
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -15.756284, y: -1190.400635, z: -15.848788}
+    rotation: {x: 90.000000, y: -0.000000, z: 90.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> b9f7dfe8-a897-40d1-8b1e-b114a856d198
+- !<SceneObject/85b1d908-2a17-44c2-833f-b3d4250b99ed>
+  PrefabRemaps:
+    []
+  Name: Camera.003
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f5a84e07-1b64-4ed2-b75b-ffaa729c2f8c
+- !<RenderMeshVisual/88b8df5b-065c-421e-868f-ec2f45e0c15a>
+  PrefabRemaps:
+    []
+  Name: component_4
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 77f39185-7fa5-48e3-b325-e076ba4a0ae1
+  Mesh: !<reference> 03485417-e21a-456d-88e4-4b7a2d82cdbd
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/8e392589-e9d1-43bb-8391-297785ec11fc>
+  PrefabRemaps:
+    []
+  Name: Default Ambient Light.002
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/8e3e21c4-a1bf-4f56-9351-8a282027f666>
+  PrefabRemaps:
+    []
+  Name: Default Ambient Light
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<Camera/b9f7dfe8-a897-40d1-8b1e-b114a856d198>
+  PrefabRemaps:
+    []
+  Name: component_3
+  Enabled: true
+  renderLayer: 1
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 23.507265
+  Near: 0.000100
+  Far: 999999.000000
+  Fov: 79.195503
+  ClearColor: !<CameraClearColor>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth>
+    Mode: None
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Orthographic
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+  DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/c20a42af-0175-41a7-92fe-aa4df13b07bc>
+  SourceRemaps:
+    - 0a80875d-c61f-4212-a3de-025de9648f89: 0e7b1e14-94cb-443d-a91b-2c6a70ed1a71
+    - 0e09a795-ea76-4567-9c57-874968a4a669: d2ffa81e-c1de-434e-ab31-eb474c906aac
+    - 12898b13-b8b5-4f4d-a146-80df11fdfe73: 46c07148-2966-464e-944b-930b53e0f631
+    - 26bca28f-ed1b-4522-a857-fcac3874c169: 8e3e21c4-a1bf-4f56-9351-8a282027f666
+    - 2f635d3c-1f23-4990-8fd8-05382aa1e1c3: 3b652d90-f6c6-421a-857b-73963c9a1cd0
+    - 550dca32-5dc0-4a6a-a2e0-71057582bd74: 1fa854a0-705b-42c7-84a7-ad8e9f363ff5
+    - 5c3befaa-e729-4323-a7a2-1a1dec54c96b: 2d9fa6a0-c7d5-48b7-86f9-b8d4d8f621b5
+    - 5fbf7fd0-a81d-4144-a044-9ad55854ddb1: f6877f14-62e6-42ca-8326-f63502e1bfcd
+    - 6029217f-d278-4ecb-b5f1-40c764c3d7af: 070c41ff-d452-44e3-88a3-b1f7f3016466
+    - 64bf9659-820b-49f2-b2c8-1cd8b8d0a0a7: f5a84e07-1b64-4ed2-b75b-ffaa729c2f8c
+    - 7181b169-9c4f-451b-a974-18534e8c49d3: f3db2774-99e4-4d7d-8a12-d3e7ae12fef4
+    - 72bac5b5-f5d7-43e3-91a4-adfcd7d74a49: 7d0f5c11-f178-449c-aa2f-3e160cdc92b9
+    - 732df0b6-d453-4032-8ac4-4c64aa4ce062: 7f0130ae-ef79-43b5-9dc0-98f8494bb545
+    - 733f7030-0a71-4dd1-978a-968052b1e84f: f10792cc-fd42-46f4-b4fe-92d568e3b5b9
+    - 74e7ea3d-9171-4e08-879b-e74d2c02cc4f: b9f7dfe8-a897-40d1-8b1e-b114a856d198
+    - 768f8a57-daad-48c2-8152-ebfede36de47: 7f9747a3-9b28-4497-b33d-8bcaa078b6fe
+    - 78aaf2a8-85f9-4008-a045-1631935f3b26: 88b8df5b-065c-421e-868f-ec2f45e0c15a
+    - 7b507928-0cfa-4e7c-8962-521433a9f984: 78436c94-1ec8-4cda-88e3-0df2bb6c073d
+    - 8f7a6280-4be7-434f-b256-3969b892fb45: 26af3002-0972-44c2-b561-609ac02f8020
+    - 92c92929-0df2-4ee2-8ab3-0b15fd435e7f: 61bf3fe9-c3b3-4735-9281-ef20e40f87a3
+    - 9302ccdc-2590-4785-a51b-0886134bd38c: 28636df6-6468-48a5-82d6-74de14742389
+    - acb688eb-fa60-4151-817d-5a1d5ac73980: 85b1d908-2a17-44c2-833f-b3d4250b99ed
+    - b63c97e8-305c-4720-9085-5d8e597cb362: e048472a-3af5-49ed-a68e-f2417e4f3334
+    - be4f7e7c-d887-46ef-a7ae-9bdbfd9b651a: 8e392589-e9d1-43bb-8391-297785ec11fc
+    - caeb0317-4ceb-48da-95a4-218fade999fa: 5210c478-b695-46ae-847d-df3b4aaa6292
+    - cb37260d-46b6-4e01-9449-823c4a423598: 81740c83-38c5-42a4-b87d-c95f1289c53d
+    - d207d038-10df-4794-80a3-7ff777292904: 7b805d9b-1425-41fd-9e9e-69ad2ace1b55
+    - d55e9c5a-1419-4f89-a925-4d5a79b20ed1: 7f85f85e-7cd1-4711-b31a-9e33aa3a29b2
+  SourceState: !<own> 3b652d90-f6c6-421a-857b-73963c9a1cd0
+- !<SceneObject/d2ffa81e-c1de-434e-ab31-eb474c906aac>
+  PrefabRemaps:
+    []
+  Name: heart.001
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.000000, y: 0.000000, z: 0.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 88b8df5b-065c-421e-868f-ec2f45e0c15a
+- !<SceneObject/e048472a-3af5-49ed-a68e-f2417e4f3334>
+  PrefabRemaps:
+    []
+  Name: Default Ambient Light.001
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
+- !<SceneObject/f10792cc-fd42-46f4-b4fe-92d568e3b5b9>
+  PrefabRemaps:
+    []
+  Name: Node_0.001
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: -90.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 7f9747a3-9b28-4497-b33d-8bcaa078b6fe
+  Components:
+    []
+- !<Camera/f3db2774-99e4-4d7d-8a12-d3e7ae12fef4>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  renderLayer: 1
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 23.507265
+  Near: 0.000100
+  Far: 999999.000000
+  Fov: 79.195503
+  ClearColor: !<CameraClearColor>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth>
+    Mode: None
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Orthographic
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+  DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
+- !<Camera/f5a84e07-1b64-4ed2-b75b-ffaa729c2f8c>
+  PrefabRemaps:
+    []
+  Name: component_5
+  Enabled: true
+  renderLayer: 1
+  MipmapLevel: 0
+  RenderOrder: 0
+  Size: 4.109649
+  Near: 0.000100
+  Far: 999999.000000
+  Fov: 79.195503
+  ClearColor: !<CameraClearColor>
+    Mode: None
+    Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  ClearDepth: !<CameraClearDepth>
+    Mode: None
+    Value: 1.000000
+    InputTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  Aspect: 1.000000
+  CameraType: Orthographic
+  DepthMode: Regular
+  DeviceProperty: All
+  AspectPreset: Custom
+  OitLayers: NoOit
+  RenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  DepthStencilRenderTarget: !<reference> 00000000-0000-0000-0000-000000000000
+  MaskTexture: !<reference> 00000000-0000-0000-0000-000000000000
+  RayTracing: !<reference> 00000000-0000-0000-0000-000000000000
+  DevicePropertiesSource: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/f6877f14-62e6-42ca-8326-f63502e1bfcd>
+  PrefabRemaps:
+    []
+  Name: meghna - PNG.png
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -320.837067, y: 14.777881, z: 49.359688}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7d0f5c11-f178-449c-aa2f-3e160cdc92b9
