@@ -14,40 +14,43 @@ export class SyncedInstantiator extends BaseScriptComponent {
     @input() instantiator: Instantiator
     @input() iceBreakerPrefab: ObjectPrefab
 
-    private iceBreakerString: string;
-    
-    constructor()
-    {
-        super();
-        this.enabled = false;
-    }
+    iceBreakerString: string;
+    header: HeaderIceBreaker;  
 
     public instantiateSyncedObject()
     {
-        this.enabled = true;
-    }
+        print("when object is instantiated, string value is" + this.iceBreakerString)
 
-    onAwake() 
-    {
-        this.instantiator.notifyOnReady(() => {
+         this.instantiator.notifyOnReady(() => {
             this.onInstantiatorReady();
         });
     }
 
-    private onInstantiatorReady() : void
+    private onInstantiatorReady()
     {
-        this.instantiator.instantiate(this.iceBreakerPrefab, null, this.onIceBreakerInstantiated);
+        this.instantiator.instantiate(this.iceBreakerPrefab, null, (networkRoot) => this.onIceBreakerInstantiated(networkRoot));
     }
 
     private onIceBreakerInstantiated(networkRoot:NetworkRootInfo)
     {
         var obj = networkRoot.instantiatedObject;
-        var headerIceBreaker = obj.getComponent('ScriptComponent') as HeaderIceBreaker;
-        headerIceBreaker.setup(this.iceBreakerString);
+        this.header = obj.getComponent('ScriptComponent') as HeaderIceBreaker;
+        this.header.setup(this.iceBreakerString);   
     }
+
+    // setupHeader()
+    // {
+    //     print("current ice breaker name " + this.iceBreakerString);
+
+    //     this.iceBreakerString = "";
+
+       
+    // }
 
     public setup(iceBreakerString:string)
     {
         this.iceBreakerString = iceBreakerString;
     }
+
+
 }
