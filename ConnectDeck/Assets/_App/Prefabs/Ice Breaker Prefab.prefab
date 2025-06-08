@@ -1,10 +1,25 @@
-- !<ObjectPrefab/1a457adf-c130-42bc-a673-b5389155f9ec>
+- !<ObjectPrefab/0a8094d7-a66b-45c9-94a7-49acd7881901>
   PackagePath: ""
   objects:
-    - !<own> e3e9ad33-1d0e-41d0-a3d0-68736d2524a9
+    - !<own> e132843d-fbac-4a33-a8ef-01bcc0b72ef6
   LazyLoading: false
   RetainAssets: true
-- !<ScriptComponent/0bcb0301-763c-4d0b-877b-e3dc8e21883b>
+- !<SceneObject/16c67809-4085-445e-af65-e7cdc65b85ec>
+  PrefabRemaps:
+    []
+  Name: Ice Breaker Text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -0.350000, z: 0.250000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4041f802-181b-4774-8d6e-80a01b238307
+- !<ScriptComponent/1caf562e-e453-4d4a-9fd9-608d76c2b6f8>
   PrefabRemaps:
     []
   Name: HeaderIceBreaker
@@ -16,46 +31,12 @@
     {}
   ScriptInputs:
     "":
-      iceBreakerDetail: !<reference.Text> a0c384c3-5fa2-45df-8325-5ec548ed412f
+      iceBreakerDetail: !<reference.Text> 4041f802-181b-4774-8d6e-80a01b238307
       distanceAboveHead: !<float> 10.000000
   ScriptTypes:
     "":
       {}
-- !<SceneObject/43111732-33af-4b3e-947f-3b454614499a>
-  PrefabRemaps:
-    []
-  Name: Header Ice Breaker
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 4.500000, y: 4.500000, z: 4.500000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> 926336c6-5b64-4c18-ad39-b68826206bb7
-- !<Image/926336c6-5b64-4c18-ad39-b68826206bb7>
-  PrefabRemaps:
-    []
-  Name: Image
-  Enabled: true
-  RenderOrder: 0
-  StretchMode: Fit
-  VerticalAlignment: Center
-  HorizontalAlignment: Center
-  MeshShadowMode: None
-  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-  ShadowDensity: 1.000000
-  Materials:
-    - !<reference> 62dcab63-8244-4c78-869a-dbacfa9e26d5
-  FlipX: false
-  FlipY: false
-  RotationAngle: 0
-  Pivot: {x: 0.000000, y: 0.000000}
-  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-- !<Text/a0c384c3-5fa2-45df-8325-5ec548ed412f>
+- !<Text/4041f802-181b-4774-8d6e-80a01b238307>
   PrefabRemaps:
     []
   Name: Text
@@ -67,20 +48,18 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: |-
-    Ask me about
-    fashion 👗
+  Text: "Ask Hagar about her taste in fashion 👗 "
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 14
+  FontSize: 12
   Font: !<reference> 506db888-4003-4f44-9e5f-488d50e1cd44
   LayoutRect:
-    left: -2.500000
-    bottom: -2.250000
-    right: 2.500000
-    top: 2.250000
+    left: -1.750000
+    bottom: -1.000000
+    right: 1.750000
+    top: 1.000000
   OverflowVertical: Overflow
   OverflowHorizontal: Wrap
   Fill: !<TextFill>
@@ -133,22 +112,41 @@
     CapitalizationOverride: None
   DepthTest: false
   TwoSided: false
-- !<SceneObject/b7a880dd-2e72-46e6-a78a-d8c2e2fe3f8b>
+- !<SceneObject/65769cfa-8112-4ca5-a0be-0aeb0532669a>
   PrefabRemaps:
     []
-  Name: Ice Breaker Text
+  Name: Header Ice Breaker
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: -0.566009, z: 0.250000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 4.500000, y: 4.500000, z: 4.500000}
     hasSegmentScaleCompensation: false
   Children:
     []
   Components:
-    - !<own> a0c384c3-5fa2-45df-8325-5ec548ed412f
-- !<ScriptComponent/c72eb584-e4d3-4e3b-8bb2-52789b1bbaa5>
+    - !<own> b928633a-fdd6-4705-a79e-3daacbbe2698
+- !<Image/b928633a-fdd6-4705-a79e-3daacbbe2698>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 62dcab63-8244-4c78-869a-dbacfa9e26d5
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/c3b780d0-7af2-4875-b562-6af6ba701e59>
   PrefabRemaps:
     []
   Name: SyncTransform
@@ -177,7 +175,7 @@
   ScriptTypes:
     "":
       {}
-- !<SceneObject/e3e9ad33-1d0e-41d0-a3d0-68736d2524a9>
+- !<SceneObject/e132843d-fbac-4a33-a8ef-01bcc0b72ef6>
   PrefabRemaps:
     []
   Name: Ice Breaker Prefab
@@ -189,8 +187,8 @@
     scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 43111732-33af-4b3e-947f-3b454614499a
-    - !<own> b7a880dd-2e72-46e6-a78a-d8c2e2fe3f8b
+    - !<own> 65769cfa-8112-4ca5-a0be-0aeb0532669a
+    - !<own> 16c67809-4085-445e-af65-e7cdc65b85ec
   Components:
-    - !<own> 0bcb0301-763c-4d0b-877b-e3dc8e21883b
-    - !<own> c72eb584-e4d3-4e3b-8bb2-52789b1bbaa5
+    - !<own> 1caf562e-e453-4d4a-9fd9-608d76c2b6f8
+    - !<own> c3b780d0-7af2-4875-b562-6af6ba701e59
