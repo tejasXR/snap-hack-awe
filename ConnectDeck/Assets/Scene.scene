@@ -148,6 +148,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/00fb99aa-8541-4055-a5b5-b006069dca69>
+  PrefabRemaps:
+    []
+  Name: "Box Text 4 [Tap]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 180.000000, y: -90.000000, z: 180.000000}
+    scale: {x: 15.000000, y: 15.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9faeb484-c258-4878-979a-b793992a078f
 - !<ScreenTransform/00fec32b-e526-447f-b2a7-d0a41baacda9>
   PrefabRemaps:
     []
@@ -1030,13 +1045,15 @@
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 0.071429, y: 0.055556, z: 0.071429}
+    scale: {x: 1.000006, y: 1.000008, z: 1.000006}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> d88802e6-1ded-4d25-bc6e-e49d1b69b11f
     - !<own> 97a6816f-fd36-4bdd-8e42-06eaef2e3c65
     - !<own> 848a2c21-8289-4b59-bf4b-eead1bacdbf1
     - !<own> 7ac26b73-7d1d-4edd-af7d-34d2be46d6ab
+    - !<own> 7e9d5e86-4774-4557-809a-e079bf0b6260
+    - !<own> 6e5ecf9a-8878-4a22-94eb-e1b48eb08b7f
   Components:
     []
 - !<SceneObject/06b59590-990e-4970-9bca-33b6cb9bba93>
@@ -1518,6 +1535,21 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/0a8527f3-9167-4b04-a93a-c8fe0388e922>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 20.000000, y: 20.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 24231e27-0e63-4197-96c8-33e01f18ba2e
 - !<ScriptComponent/0ab7aea7-9900-46d6-8542-8285ae20851d>
   PrefabRemaps:
     []
@@ -2528,6 +2560,37 @@
     []
   Components:
     []
+- !<ScriptComponent/14c0ae8d-b5f1-4abf-ab33-8c15167ba696>
+  PrefabRemaps:
+    []
+  Name: BoxTextLayer
+  Enabled: true
+  ScriptAsset: !<reference> 7dc29ddb-0136-4cf6-9389-b33d67c59976
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 250.000000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/15019a74-c600-4cc3-b46f-9dce0d3e44bb>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -9.574335, z: -0.248575}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 14.000000, y: 14.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 85d62d9d-f7d3-4763-8445-0680a7c5d9b3
 - !<SceneObject/15725cd9-48fa-4bae-988a-584daf4739ae>
   PrefabRemaps:
     []
@@ -3983,6 +4046,11 @@
       nextButton: !<MappingBased.AssignableType_2> fb3a8ce4-57a5-4439-8d34-4d545aee8e70
       boxModel: !<reference.SceneObject> cb8503bd-855f-4b2a-a984-9784ccc94f1c
       rotationTime: !<float> 850.000000
+      boxTextLayers: !<MappingBased.AssignableType_3[]>
+        - !<reference> 14c0ae8d-b5f1-4abf-ab33-8c15167ba696
+        - !<reference> a935f245-7288-4650-96ba-5d832de8b127
+        - !<reference> 7f5dfb36-ac26-416f-bedd-c4f700ba0689
+        - !<reference> 860837ef-328d-4d4d-9e67-9162b464744a
   ScriptTypes:
     "":
       {}
@@ -4039,6 +4107,44 @@
     - !<own> bd4be269-b463-4a93-b88c-d92aaa5d9e79
     - !<own> 1d4bb951-1581-4f72-8419-c6584f9519b3
     - !<own> a7ecdf88-644e-4790-8024-af945b9947a8
+- !<Image/24231e27-0e63-4197-96c8-33e01f18ba2e>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 28ff631e-8253-42d8-8fcc-0057d0925260
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<Image/2431bd7c-fb06-4d29-92cd-8d0627a17372>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 6acca59b-7519-472a-85c5-0e0fd5108a32
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/24735720-6b9f-427a-9eac-d7769813d453>
   PrefabRemaps:
     []
@@ -4917,6 +5023,21 @@
     - !<own> dd5e91b1-2350-43f1-bcd0-2e1a91615574
     - !<own> 97900200-e8a7-4e6a-9254-3a301033599f
     - !<own> b46dc380-d770-40db-8f9a-1541ee3ff6b1
+- !<SceneObject/285dadfa-685b-4db1-a0b0-7db73f0ffd80>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 180.000000, y: -0.000000, z: 180.000000}
+    scale: {x: 14.000000, y: 18.000000, z: 14.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5cfa30c8-3a9b-494d-89ca-fce13b92eb60
 - !<Image/285fa426-7205-4335-b64a-463e85e76647>
   PrefabRemaps:
     []
@@ -7320,6 +7441,22 @@
     []
   Components:
     - !<own> d3623bdf-de60-4289-81db-42587401ca89
+- !<SceneObject/3aa080e5-8326-4f59-82d3-637bf16f74b1>
+  PrefabRemaps:
+    []
+  Name: "Box Text Layer [2]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 10.000000, y: 8.780883, z: 0.000000}
+    rotation: {x: 0.000000, y: 90.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 0a8527f3-9167-4b04-a93a-c8fe0388e922
+    - !<own> 96d01260-45c1-431e-95e1-a5448781e7a5
+  Components:
+    - !<own> a935f245-7288-4650-96ba-5d832de8b127
 - !<SceneObject/3ab57d89-4504-4c07-8bc7-c742ab933461>
   PrefabRemaps:
     []
@@ -9915,6 +10052,25 @@
     - !<own> 88f96ec5-001c-474b-91f6-23b922a0f17a
   Components:
     []
+- !<Image/4fa2d965-1bd2-4bc0-856f-55eb5a7e568c>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 387c4a72-ea5a-486d-9606-458f9408b95f
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/4faea6aa-bc14-4044-bd5d-5e95569fac57>
   PrefabRemaps:
     []
@@ -11575,6 +11731,25 @@
   ScriptTypes:
     "":
       {}
+- !<Image/5cfa30c8-3a9b-494d-89ca-fce13b92eb60>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ed1a8518-4554-4b1a-85ea-8e51071fce8a
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<RenderMeshVisual/5d16a26f-77fc-4a04-b298-d95c6dae59fc>
   PrefabRemaps:
     []
@@ -12381,6 +12556,21 @@
     - !<own> 7eee6c01-e610-4ef1-84b4-8b7c60d2ea21
   Components:
     []
+- !<SceneObject/62c6a99f-fd6c-488d-9bc0-0d56eea534b8>
+  PrefabRemaps:
+    []
+  Name: "Box Text Layer [3]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 10.398888, z: -10.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 285dadfa-685b-4db1-a0b0-7db73f0ffd80
+  Components:
+    - !<own> 7f5dfb36-ac26-416f-bedd-c4f700ba0689
 - !<ScriptComponent/630399b7-fba0-4595-838a-96985feb6bab>
   PrefabRemaps:
     []
@@ -12571,6 +12761,25 @@
   ScriptTypes:
     "":
       {}
+- !<Image/64f58403-3e5f-4fa3-aa3e-daac79dec1ec>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0f06318a-bbd5-43d2-8a6f-acd34c917c57
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/65006a2d-f27c-4e11-81bb-b4999175cca2>
   PrefabRemaps:
     []
@@ -13766,6 +13975,22 @@
     - !<own> bcd8f9ab-5dd9-489b-a95a-c3a608b623b4
   Components:
     []
+- !<SceneObject/6ba1b27d-f071-4388-832e-266d6db6d649>
+  PrefabRemaps:
+    []
+  Name: "Box Text Layer [1]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 7.749655, z: 9.777449}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ca2a8ae7-7883-461a-ac76-644ec58eb1f9
+    - !<own> 15019a74-c600-4cc3-b46f-9dce0d3e44bb
+  Components:
+    - !<own> 14c0ae8d-b5f1-4abf-ab33-8c15167ba696
 - !<ScriptComponent/6bd523ab-8159-4a8e-afab-bc554bf3bfbd>
   PrefabRemaps:
     []
@@ -14075,6 +14300,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/6e5ecf9a-8878-4a22-94eb-e1b48eb08b7f>
+  PrefabRemaps:
+    []
+  Name: "Box Image [Push]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -9.557669, y: -1.527624, z: 0.000000}
+    rotation: {x: 0.000000, y: -90.000000, z: 0.000000}
+    scale: {x: 11.000000, y: 11.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 64f58403-3e5f-4fa3-aa3e-daac79dec1ec
 - !<ScriptComponent/6e9ce40c-51bf-4af1-98a7-fb6b8cca282e>
   PrefabRemaps:
     []
@@ -15344,9 +15584,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: -7.000000, y: 0.000001, z: 0.000000}
+    position: {x: -8.000000, y: 0.000001, z: 0.000000}
     rotation: {x: -0.000005, y: -90.000000, z: 0.000005}
-    scale: {x: 28.000000, y: 21.000000, z: 1.000000}
+    scale: {x: 31.000000, y: 24.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -15771,6 +16011,21 @@
     bottom: 0.000000
     right: 9.000000
     top: 0.000000
+- !<SceneObject/7e9d5e86-4774-4557-809a-e079bf0b6260>
+  PrefabRemaps:
+    []
+  Name: "Box Image [Myserty Box]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -4.713577, z: -9.299979}
+    rotation: {x: 180.000000, y: -0.000000, z: -180.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4fa2d965-1bd2-4bc0-856f-55eb5a7e568c
 - !<ScreenTransform/7ebde000-e96c-4b6b-b629-eec302c0d8ee>
   PrefabRemaps:
     []
@@ -15979,6 +16234,22 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/7f5dfb36-ac26-416f-bedd-c4f700ba0689>
+  PrefabRemaps:
+    []
+  Name: BoxTextLayer
+  Enabled: true
+  ScriptAsset: !<reference> 7dc29ddb-0136-4cf6-9389-b33d67c59976
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 250.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/7f83f1a9-f541-4784-ba22-b88f3e8799b8>
   PrefabRemaps:
     []
@@ -16538,9 +16809,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: -7.000000}
+    position: {x: 0.000000, y: 0.000000, z: -8.000000}
     rotation: {x: 0.000000, y: 180.000000, z: 0.000000}
-    scale: {x: 28.000000, y: 21.000000, z: 1.000000}
+    scale: {x: 31.000000, y: 24.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -16674,6 +16945,41 @@
   ScriptInputs:
     "":
       {}
+  ScriptTypes:
+    "":
+      {}
+- !<Image/85d62d9d-f7d3-4763-8445-0680a7c5d9b3>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> dd82d15b-e063-48e6-922f-50d084b1ec64
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<ScriptComponent/860837ef-328d-4d4d-9e67-9162b464744a>
+  PrefabRemaps:
+    []
+  Name: BoxTextLayer
+  Enabled: true
+  ScriptAsset: !<reference> 7dc29ddb-0136-4cf6-9389-b33d67c59976
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 450.000000
   ScriptTypes:
     "":
       {}
@@ -16816,6 +17122,25 @@
   Components:
     - !<own> e380157f-67d8-4c55-b8b5-f1530d8f622e
     - !<own> 5e29ba47-28a0-48cd-b44a-95c97cf7d997
+- !<Image/87aec36d-fa29-4043-996e-58cd4722e752>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 81dff2e2-a098-411d-b52a-3995ae9eaf01
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<Text/87db9db1-1c7a-49d5-90f0-c84ff76df872>
   PrefabRemaps:
     []
@@ -18692,6 +19017,21 @@
     InvertRotation: false
   SurfaceOptions: !<SurfaceOptions>
     EnhanceWithNativeAR: false
+- !<SceneObject/96d01260-45c1-431e-95e1-a5448781e7a5>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: -2.944507, z: -0.645729}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 4.000000, y: 4.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 87aec36d-fa29-4043-996e-58cd4722e752
 - !<SceneObject/970e62bf-810a-4fc6-95e8-7e6d7ea4a42e>
   PrefabRemaps:
     []
@@ -18761,9 +19101,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 7.000000, y: 0.000009, z: 0.000000}
+    position: {x: 8.000000, y: 0.000009, z: 0.000000}
     rotation: {x: 0.000000, y: 90.000000, z: 0.000000}
-    scale: {x: 28.000000, y: 21.000000, z: 14.000000}
+    scale: {x: 31.000000, y: 24.000000, z: 14.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -19526,6 +19866,25 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<Image/9faeb484-c258-4878-979a-b793992a078f>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> ddebecc5-61d6-418c-9e46-9dca1bd59aa0
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<RenderMeshVisual/9fb8d105-3684-4e6a-90ad-a94b0709ddd8>
   PrefabRemaps:
     []
@@ -20434,6 +20793,22 @@
     - !<own> 2630f39c-31a1-4cfd-95f4-f86acca695d8
   Components:
     []
+- !<ScriptComponent/a935f245-7288-4650-96ba-5d832de8b127>
+  PrefabRemaps:
+    []
+  Name: BoxTextLayer
+  Enabled: true
+  ScriptAsset: !<reference> 7dc29ddb-0136-4cf6-9389-b33d67c59976
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 250.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/a9631f72-fca9-428e-aaa3-3cf82bb2b662>
   PrefabRemaps:
     []
@@ -24822,6 +25197,24 @@
   Size:
     x: !<float> 1.000000
     y: !<float> 1.000000
+- !<SceneObject/c8b1cf4b-7013-432d-a266-eb52eb884d7e>
+  PrefabRemaps:
+    []
+  Name: Box Text Layer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6ba1b27d-f071-4388-832e-266d6db6d649
+    - !<own> 3aa080e5-8326-4f59-82d3-637bf16f74b1
+    - !<own> 62c6a99f-fd6c-488d-9bc0-0d56eea534b8
+    - !<own> fd761bf9-5728-4d95-9fd2-0797f1c1f8e6
+  Components:
+    []
 - !<SceneObject/c8bcd1da-0f13-4d99-a307-d888064c745b>
   PrefabRemaps:
     []
@@ -24954,6 +25347,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/ca2a8ae7-7883-461a-ac76-644ec58eb1f9>
+  PrefabRemaps:
+    []
+  Name: Logo
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 16.000000, y: 16.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2431bd7c-fb06-4d29-92cd-8d0627a17372
 - !<ScriptComponent/ca588122-c395-4c5e-9ebf-ca6b40016c84>
   PrefabRemaps:
     []
@@ -25171,11 +25579,12 @@
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 14.000000, y: 18.000000, z: 14.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 253c931f-35b4-40b7-8233-6eb0168bb19a
     - !<own> 069c1d06-be7b-447e-b6a6-acaec021617b
+    - !<own> c8b1cf4b-7013-432d-a266-eb52eb884d7e
   Components:
     []
 - !<RenderMeshVisual/cb8a49cd-0eaa-4419-89a0-6e2924082b10>
@@ -27026,9 +27435,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 7.000000}
+    position: {x: 0.000000, y: 0.000000, z: 8.000000}
     rotation: {x: 180.000000, y: 180.000000, z: 180.000000}
-    scale: {x: 28.000000, y: 21.000000, z: 14.000000}
+    scale: {x: 31.000000, y: 24.000000, z: 14.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -31558,6 +31967,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/fd761bf9-5728-4d95-9fd2-0797f1c1f8e6>
+  PrefabRemaps:
+    []
+  Name: "Box Text Layer [4]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -10.889407, y: 8.281238, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 00fb99aa-8541-4055-a5b5-b006069dca69
+  Components:
+    - !<own> 860837ef-328d-4d4d-9e67-9162b464744a
 - !<SceneObject/fd787754-2864-426b-9010-68b74604c32c>
   PrefabRemaps:
     []
