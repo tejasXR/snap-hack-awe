@@ -163,6 +163,7 @@
     []
   Components:
     - !<own> 9faeb484-c258-4878-979a-b793992a078f
+    - !<own> 502ec430-2cba-4e3c-ae6d-215ff4e83798
 - !<ScreenTransform/00fec32b-e526-447f-b2a7-d0a41baacda9>
   PrefabRemaps:
     []
@@ -1036,6 +1037,22 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/068d4195-3a96-4a82-a016-af5c687574ce>
+  PrefabRemaps:
+    []
+  Name: Card Name
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 6.000000, z: -1.420736}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 7.000000, y: 7.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a9b10236-add3-4361-9410-f407a290a3b7
+    - !<own> d6a93606-945d-4d96-b34e-684521e8acbb
 - !<SceneObject/069c1d06-be7b-447e-b6a6-acaec021617b>
   PrefabRemaps:
     []
@@ -1543,13 +1560,14 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 2.000000}
     scale: {x: 20.000000, y: 20.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 24231e27-0e63-4197-96c8-33e01f18ba2e
+    - !<own> bfaab1d2-6b8a-4814-af59-f5b42414ed27
 - !<ScriptComponent/0ab7aea7-9900-46d6-8542-8285ae20851d>
   PrefabRemaps:
     []
@@ -5031,13 +5049,14 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 180.000000, y: -0.000000, z: 180.000000}
+    rotation: {x: 180.000000, y: -0.000000, z: 182.000000}
     scale: {x: 14.000000, y: 18.000000, z: 14.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 5cfa30c8-3a9b-494d-89ca-fce13b92eb60
+    - !<own> b04e3dd6-b3f1-4c50-a5e0-c0aef6bf7921
 - !<Image/285fa426-7205-4335-b64a-463e85e76647>
   PrefabRemaps:
     []
@@ -10124,6 +10143,22 @@
   ForceCompound: false
   Intangible: false
   ShowCollider: false
+- !<ScriptComponent/502ec430-2cba-4e3c-ae6d-215ff4e83798>
+  PrefabRemaps:
+    []
+  Name: LogoTween
+  Enabled: true
+  ScriptAsset: !<reference> f2b9bd37-9f66-4dd1-ba98-888bee2cdb8b
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 3000.000000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/506956e6-cf41-4db1-a3a1-6030a460836c>
   PrefabRemaps:
     []
@@ -11526,6 +11561,7 @@
     - !<own> 704f8294-fe76-4920-a4a5-ae32a700dc10
   Components:
     - !<own> d7282ca4-4576-44e9-bf1c-5970c59b62a3
+    - !<own> c41a5152-63f4-43e4-bc10-4a3679ea9503
 - !<Text/5ba3ace2-9abb-469c-883b-200461fe1814>
   PrefabRemaps:
     []
@@ -14308,7 +14344,7 @@
   Layers: 1
   LocalTransform:
     position: {x: -9.557669, y: -1.527624, z: 0.000000}
-    rotation: {x: 0.000000, y: -90.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -90.000000, z: 2.000000}
     scale: {x: 11.000000, y: 11.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -14407,7 +14443,7 @@
   PrefabRemaps:
     []
   Name: Open Palm Interaction
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -14539,6 +14575,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
+    - !<own> 068d4195-3a96-4a82-a016-af5c687574ce
     - !<own> dddd8515-7d68-4913-99b2-7df7f19f9ecd
   Components:
     []
@@ -16632,7 +16669,7 @@
   ScriptInputs:
     "":
       instantiator: !<MappingBased.AssignableType> 8a36b2b9-6850-4a5f-b2e9-7801d302c036
-      iceBreakerPrefab: !<reference.ObjectPrefab> 1a457adf-c130-42bc-a673-b5389155f9ec
+      iceBreakerPrefab: !<reference.ObjectPrefab> 0a8094d7-a66b-45c9-94a7-49acd7881901
   ScriptTypes:
     "":
       {}
@@ -17498,7 +17535,7 @@
   ScriptInputs:
     "":
       prefabs: !<reference.ObjectPrefab[]>
-        - !<reference> 1a457adf-c130-42bc-a673-b5389155f9ec
+        - !<reference> 0a8094d7-a66b-45c9-94a7-49acd7881901
       spawnerOwnsObject: false
       spawnAsChildren: false
       spawnUnderParent: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -18208,7 +18245,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 6.487895, y: -5.908033, z: 1.000000}
+    position: {x: 7.485793, y: -5.650184, z: 1.234050}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -18556,7 +18593,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: -4.700000, y: -1.500000, z: -0.250000}
+    position: {x: -5.331356, y: -0.781197, z: -0.250000}
     rotation: {x: 0.000000, y: 0.000000, z: -15.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -19709,6 +19746,22 @@
       _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
       _axisEasing: !<Vec3> {x: 0.100000, y: 0.100000, z: 0.100000}
       duration: 0.033000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/9ce27201-4e8e-479a-a939-74e453f5c460>
+  PrefabRemaps:
+    []
+  Name: LogoTween
+  Enabled: true
+  ScriptAsset: !<reference> f2b9bd37-9f66-4dd1-ba98-888bee2cdb8b
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 3000.000000
   ScriptTypes:
     "":
       {}
@@ -20939,6 +20992,30 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/a9b10236-add3-4361-9410-f407a290a3b7>
+  PrefabRemaps:
+    []
+  Name: Billboard
+  Enabled: true
+  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  ScriptInputsDefault:
+    _yAxisEnabled: true
+    _zAxisEnabled: true
+    _axisBufferDegrees: true
+    duration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _xAxisEnabled: true
+      _yAxisEnabled: true
+      _zAxisEnabled: false
+      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
+      duration: 0.033000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/a9b3e7e1-160e-4a12-b872-00f47aa8b02d>
   PrefabRemaps:
     []
@@ -21744,6 +21821,22 @@
       customFunctionForOnStateChanged: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       onStateChangedFunctionNames: !<string[]>
         []
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/b04e3dd6-b3f1-4c50-a5e0-c0aef6bf7921>
+  PrefabRemaps:
+    []
+  Name: LogoTween
+  Enabled: true
+  ScriptAsset: !<reference> f2b9bd37-9f66-4dd1-ba98-888bee2cdb8b
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 3000.000000
   ScriptTypes:
     "":
       {}
@@ -23057,7 +23150,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 4.700000, y: 5.000000, z: -0.250000}
+    position: {x: 4.977128, y: 5.000000, z: -0.250000}
     rotation: {x: 0.000000, y: -0.000000, z: 15.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -23675,6 +23768,22 @@
       acceptableZDirections: !<float> 1.000000
       isSynced: true
       acceptableSyncInteractionTypes: !<float> 7.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/bfaab1d2-6b8a-4814-af59-f5b42414ed27>
+  PrefabRemaps:
+    []
+  Name: LogoTween
+  Enabled: true
+  ScriptAsset: !<reference> f2b9bd37-9f66-4dd1-ba98-888bee2cdb8b
+  ScriptInputsDefault:
+    tweenTime: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      tweenTime: !<float> 3000.000000
   ScriptTypes:
     "":
       {}
@@ -24481,6 +24590,22 @@
     - !<own> dff0f480-34a9-449f-9daf-276cf99131a9
     - !<own> d7478480-fea3-46f5-93bb-c5e3883b329a
     - !<own> 861aeb6f-b90f-4124-9cdb-27cc28127173
+- !<ScriptComponent/c41a5152-63f4-43e4-bc10-4a3679ea9503>
+  PrefabRemaps:
+    []
+  Name: WayfinderController
+  Enabled: true
+  ScriptAsset: !<reference> 546d63a5-1680-4747-8d59-62237bea28d6
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      nameImage: !<reference.Image> d6a93606-945d-4d96-b34e-684521e8acbb
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/c4995ab6-8d88-4bd9-b2db-b59677d7f8e3>
   PrefabRemaps:
     []
@@ -25056,7 +25181,6 @@
   Children:
     []
   Components:
-    - !<own> e0cc36e6-0f93-4424-a963-d6018acd0d13
     - !<own> aa077ce8-669d-4304-b55f-15177178f179
 - !<SceneObject/c76867e0-bed1-4122-aaab-4ba083ef310d>
   PrefabRemaps:
@@ -25354,14 +25478,15 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 16.000000, y: 16.000000, z: 1.000000}
+    position: {x: 0.000000, y: 0.625189, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 2.000000}
+    scale: {x: 19.000000, y: 19.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> 2431bd7c-fb06-4d29-92cd-8d0627a17372
+    - !<own> 9ce27201-4e8e-479a-a939-74e453f5c460
 - !<ScriptComponent/ca588122-c395-4c5e-9ebf-ca6b40016c84>
   PrefabRemaps:
     []
@@ -26369,7 +26494,6 @@
   Children:
     []
   Components:
-    - !<own> dd1a438e-3c14-4507-ae49-37b03e09d0e0
     - !<own> 31d8201c-a8fb-4b89-adc5-6c8e104967ff
 - !<ScriptComponent/d17729e4-b472-4836-8d75-9588c646192a>
   PrefabRemaps:
@@ -27043,6 +27167,25 @@
     - !<own> ab054bbd-a6c3-49b6-88da-06983ad5b5aa
   Components:
     []
+- !<Image/d6a93606-945d-4d96-b34e-684521e8acbb>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> aeac724c-b564-442f-b99d-d701c9b9deea
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/d6d967b9-e827-40c6-af1b-54b8eb96ca83>
   PrefabRemaps:
     []
@@ -28043,30 +28186,6 @@
   BlendNormals: false
   BlendShapes:
     GUY_OPT1: 0.000000
-- !<ScriptComponent/dd1a438e-3c14-4507-ae49-37b03e09d0e0>
-  PrefabRemaps:
-    []
-  Name: Billboard
-  Enabled: true
-  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
-  ScriptInputsDefault:
-    _yAxisEnabled: true
-    _zAxisEnabled: true
-    _axisBufferDegrees: true
-    duration: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      _xAxisEnabled: true
-      _yAxisEnabled: true
-      _zAxisEnabled: false
-      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
-      duration: 0.033000
-  ScriptTypes:
-    "":
-      {}
 - !<RenderMeshVisual/dd3b596e-60f8-4830-8f4d-f5a18cbe958b>
   PrefabRemaps:
     []
@@ -28194,7 +28313,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: -0.000000, z: 0.000000}
+    position: {x: 0.000000, y: 2.000000, z: 0.000000}
     rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
     scale: {x: 5.000000, y: 4.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -28496,30 +28615,6 @@
     - !<own> 46da3062-a5b0-42eb-bdcc-f587529bf66c
   Components:
     []
-- !<ScriptComponent/e0cc36e6-0f93-4424-a963-d6018acd0d13>
-  PrefabRemaps:
-    []
-  Name: Billboard
-  Enabled: true
-  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
-  ScriptInputsDefault:
-    _yAxisEnabled: true
-    _zAxisEnabled: true
-    _axisBufferDegrees: true
-    duration: true
-  ScriptTypesDefault:
-    {}
-  ScriptInputs:
-    "":
-      _xAxisEnabled: true
-      _yAxisEnabled: true
-      _zAxisEnabled: false
-      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
-      _axisEasing: !<Vec3> {x: 0.500000, y: 0.500000, z: 0.500000}
-      duration: 0.033000
-  ScriptTypes:
-    "":
-      {}
 - !<ColliderComponent/e0e7b6b9-8e64-4977-86eb-3e21fee2e19e>
   PrefabRemaps:
     []
@@ -28609,7 +28704,8 @@
         - !<reference> c9eeb574-dca2-4d41-aff4-e7b2b7513a3a
       cardToConfigure: !<MappingBased.AssignableType_2> df1b6092-0b92-4113-8245-66ac23355c4c
       minmizedCardToConfigure: !<MappingBased.AssignableType_3> 40f32efd-15fc-4111-b2be-5ab165144721
-      syncedInstantiator: !<MappingBased.AssignableType_4> 81e7fb60-7007-46d8-8688-8801b70e2d5b
+      wayfinderController: !<MappingBased.AssignableType_4> c41a5152-63f4-43e4-bc10-4a3679ea9503
+      syncedInstantiator: !<MappingBased.AssignableType_5> 81e7fb60-7007-46d8-8688-8801b70e2d5b
   ScriptTypes:
     "":
       {}
