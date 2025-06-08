@@ -9,7 +9,7 @@ import { SyncedInstantiator } from "_App/Scripts/SyncedInstantiator"
 @component
 export class SessionConnector extends BaseScriptComponent {
     
-    @input sendConnectionButton: Interactable;
+    @input startConnection: PinchButton;
     @input connectOnStart: boolean;
     @input enableOnConnected: SceneObject;
     @input syncedInstantiator: SyncedInstantiator;
@@ -22,7 +22,7 @@ export class SessionConnector extends BaseScriptComponent {
         this.createEvent("UpdateEvent").bind(() => this.onUpdate());
     }
     
- private onStart() {
+    private onStart() {
 
         SessionController.getInstance().onConnectionFailed.add(()=> {
             print("WARNING: Connection Failed");
@@ -34,7 +34,7 @@ export class SessionConnector extends BaseScriptComponent {
             print("Session is connected!");
         });
 
-        this.sendConnectionButton.onTriggerStart.add(() => this.startConnectedSession())
+        this.startConnection.onButtonPinched.add(() => this.startConnectedSession());
 
         if (this.connectOnStart)
         {

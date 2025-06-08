@@ -30,14 +30,14 @@
   ScriptInputsHidden:
     connectOnStart: false
     enableOnConnected: false
-    sendConnectionButton: false
+    startConnection: false
     syncedInstantiator: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    - sendConnectionButton: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+    - startConnection: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
       connectOnStart: false
       enableOnConnected: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       syncedInstantiator: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
@@ -45,7 +45,7 @@
     -
       {}
   InputLines:
-    - // @input AssignableType sendConnectionButton
+    - // @input AssignableType startConnection
     - // @input bool connectOnStart
     - // @input SceneObject enableOnConnected
     - // @input AssignableType_1 syncedInstantiator
