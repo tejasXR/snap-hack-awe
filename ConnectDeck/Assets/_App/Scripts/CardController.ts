@@ -117,13 +117,14 @@ export class CardController extends BaseScriptComponent {
         .start();
 
         // Move
-        LSTween.moveToWorld
+        LSTween.moveFromToWorld
         (
                 this.getTransform(),
+                this.getTransform().getWorldPosition(),
                 this.leftHand.getTransform().getWorldPosition(),
                 this.animateOutTweenTime
         )
-        .easing(Easing.Exponential.In)
+        .easing(Easing.Quartic.In)
         .start()
         .onComplete(() =>
         {
