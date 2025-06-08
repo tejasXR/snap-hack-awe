@@ -28,12 +28,13 @@ export class HeaderIceBreaker extends BaseScriptComponent {
             return;
         }
 
-        if (!SessionController.getInstance().isLocalUserConnection)
+        // We want to project this ice breaker over the other person, not our local user
+        if (SessionController.getInstance().isLocalUserConnection)
         {
             return;
         }
 
-        var camera = SessionController.getInstance().deviceTrackingComponent. getTransform();
+        var camera = SessionController.getInstance().deviceTrackingComponent.getTransform();
         
         var headPosition = camera.getWorldPosition();
         var yAddition = new vec3(0, this.distanceAboveHead, 0);
