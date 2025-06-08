@@ -44,12 +44,8 @@ export class SessionConnector extends BaseScriptComponent {
 
     private startConnectedSession()
     {
-        // this.sendConnectionButton.getSceneObject().enabled = false;
         SessionController.getInstance().init();
         this.syncedInstantiator.instantiateSyncedObject();
-
-        // SessionController.getInstance().setColocatedBuildStatus(ColocatedBuildStatus.None);
-        // SessionController.getInstance().setColocatedMapId("");
     }
 
     private stopConnectedSession(){
