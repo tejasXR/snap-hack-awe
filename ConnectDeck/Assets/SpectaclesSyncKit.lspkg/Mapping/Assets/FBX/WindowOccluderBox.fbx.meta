@@ -1,8 +1,8 @@
 - !<AssetImportMetadata/8cc50cd5-9d3d-e640-616d-695201724bab>
   ImportedAssetIds:
-    42f1f02ecc578ba6: !<reference> 21a1b90b-65f8-44a4-b189-fb60ee20a810
-    66780cf3a4dcb2b8: !<reference> 529beba7-b705-4fa5-83f5-f56e6e44a016
-    76a07637944ffdf0: !<reference> 63362711-f99c-4ee0-87e3-21ff9a05dfa1
+    559f70ee7ec2ae58: !<reference> 38152963-e868-4d39-a91f-3ec14ae6267b
+    7a0dd5cd69df73fa: !<reference> 40b18b6c-07c4-46b9-9a18-1838e6445db7
+    922e6215b021c122: !<reference> 49870a5e-f093-4851-b43f-113aaa094dbc
     Meshes/Cube: !<reference> 149f55ab-895f-4004-afe7-846b47f8ceb2
     Scene: !<reference> 923bdbe8-f66f-40b3-b804-21d61558f05c
   ImporterName: FbxImporter

@@ -29,12 +29,12 @@
     instantiator: false
     prefab: false
   ScriptTypesHidden:
-    Instantiator: false
+    "Instantiator\r": false
   DefaultScriptInputs:
-    - instantiator: !<Typename.Instantiator> 00000000-0000-0000-0000-000000000000
+    - instantiator: !<RequiredType.Instantiator> 00000000-0000-0000-0000-000000000000
       prefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
-    - Instantiator: !<reference.ScriptAsset> 00000000-0000-0000-0000-000000000000
+    - "Instantiator\r": !<reference.ScriptAsset> 00000000-0000-0000-0000-000000000000
   SetupScript:
     code: ""
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000

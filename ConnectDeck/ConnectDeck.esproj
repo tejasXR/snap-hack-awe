@@ -10,9 +10,9 @@ updateCheckpoint: 57
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 viewConfig:
   simulation:
-    device: Spectacles (2024)
-    cameraFov: nan
-    fullFrameAspect: 0.666660
+    device: No Simulation
+    cameraFov: 66.519997
+    fullFrameAspect: nan
     resolutionScale: 1.000000
     viewport: Maximized
     output: Live
@@ -24,7 +24,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: ConnectDeck
+  lensName: LYNQ
   lensDescriptors:
     []
   lensApplicability:
@@ -33,7 +33,7 @@ metaInfo:
   lensClientCompatibilities:
     - Spectacles
   platformBundlesEnabled: false
-  iconHash: ""
+  iconHash: 507dff32b88f47f3287bf6bdfd8b443f
   videoPreviewHash: ""
   fromTemplateName: Default
   fromTemplateUrl: Lens Studio 5.9.1.25051422

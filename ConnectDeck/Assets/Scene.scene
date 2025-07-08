@@ -28829,6 +28829,11 @@
       boxController: !<MappingBased.AssignableType> 23b66e30-3d36-47e1-9181-770f85580455
       cardDatas: !<MappingBased.AssignableType_1[]>
         - !<reference> 4d85402f-d15f-4043-b31b-58ce341808c1
+        - !<reference> 7bca69ef-c02e-473f-a8b2-3ffce7dee45c
+        - !<reference> feebc4fd-17c8-4efd-9175-155129689d39
+        - !<reference> c9eeb574-dca2-4d41-aff4-e7b2b7513a3a
+        - !<reference> 10b179f4-c11b-4ae3-85de-35e9da49e63a
+        - !<reference> 9174e6b5-bd13-4a55-8d2b-3ad726797ff9
       cardToConfigure: !<MappingBased.AssignableType_2> df1b6092-0b92-4113-8245-66ac23355c4c
       minmizedCardToConfigure: !<MappingBased.AssignableType_3> 40f32efd-15fc-4111-b2be-5ab165144721
       wayfinderController: !<MappingBased.AssignableType_4> c41a5152-63f4-43e4-bc10-4a3679ea9503
